@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
+import { Link, useNavigate} from 'react-router-dom';
 
 function Navbar(){
+
     const [isToggleOpen, setIsToggleOpen] = useState(false)
+    const navigate = useNavigate();
 
     return (
     <>
@@ -16,7 +19,8 @@ function Navbar(){
               role="navigation"
             >
               {/*      <!-- Brand logo --> */}
-              <a
+              <Link
+                to='/'
                 id="WindUI"
                 aria-label="WindUI logo"
                 aria-current="page"
@@ -44,8 +48,8 @@ function Navbar(){
                     fill="rgba(255,255,255,.2)"
                   />
                 </svg>
-                Brand
-              </a>
+                ~Mako~
+              </Link>
               {/*      <!-- Mobile trigger --> */}
               <button
                 className={`relative order-10 block h-10 w-10 self-center lg:hidden
@@ -85,13 +89,14 @@ function Navbar(){
                 }`}
               >
                 <li role="none" className="flex items-stretch">
+                   
                   <a
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="javascript:void(0)"
                   >
-                    <span>About Me</span>
+                    <Link to='/about_me'>About Me</Link>
                   </a>
                 </li>
                 <li role="none" className="flex items-stretch">
@@ -99,7 +104,7 @@ function Navbar(){
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="javascript:void(0)"
                   >
                     <span>Projects</span>
