@@ -19,14 +19,13 @@ function Navbar(){
               role="navigation"
             >
               {/*      <!-- Brand logo --> */}
-              <Link
-                to='/'
+              <div
                 id="WindUI"
                 aria-label="WindUI logo"
                 aria-current="page"
                 className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
-                href="javascript:void(0)"
               >
+                <Link to="/"> 
                 <svg
                   width="300"
                   height="300"
@@ -48,8 +47,9 @@ function Navbar(){
                     fill="rgba(255,255,255,.2)"
                   />
                 </svg>
+                </Link>
                 ~Mako~
-              </Link>
+              </div>
               {/*      <!-- Mobile trigger --> */}
               <button
                 className={`relative order-10 block h-10 w-10 self-center lg:hidden
@@ -90,14 +90,14 @@ function Navbar(){
               >
                 <li role="none" className="flex items-stretch">
                    
-                  <a
+                  <div
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    href="javascript:void(0)"
+  
                   >
                     <Link to='/about_me'>About Me</Link>
-                  </a>
+                  </div>
                 </li>
                 <li role="none" className="flex items-stretch">
                   <a
@@ -105,7 +105,7 @@ function Navbar(){
                     aria-current="page"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    href="javascript:void(0)"
+  
                   >
                     <span>Projects</span>
                   </a>
@@ -115,7 +115,7 @@ function Navbar(){
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    href="javascript:void(0)"
+  
                   >
                     <span>Contact</span>
                   </a>
