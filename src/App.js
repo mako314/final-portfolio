@@ -3,6 +3,8 @@ import NavBar from './PortfolioComponents/NavBar';
 import AboutMe from './PortfolioComponents/AboutMe';
 import HomePageHero from './PortfolioComponents/HomePageHero';
 import ProjectCollection from './ProjectComponents/ProjectCollection';
+import Footer from './PortfolioComponents/Footer';
+import Contact from './PortfolioComponents/Contact';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <NavBar/>
       <HomePageHero/>
       <ProjectCollection/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
