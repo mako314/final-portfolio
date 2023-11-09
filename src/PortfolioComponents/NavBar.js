@@ -91,7 +91,7 @@ function Navbar(){
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="javascript:void(0)"
                   >
-                    <span>Shop</span>
+                    <span>About Me</span>
                   </a>
                 </li>
                 <li role="none" className="flex items-stretch">
@@ -102,7 +102,7 @@ function Navbar(){
                     className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="javascript:void(0)"
                   >
-                    <span>Account</span>
+                    <span>Projects</span>
                   </a>
                 </li>
                 <li role="none" className="flex items-stretch">
@@ -112,12 +112,13 @@ function Navbar(){
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="javascript:void(0)"
                   >
-                    <span>Wishlist</span>
+                    <span>Contact</span>
                   </a>
                 </li>
               </ul>
               {/*      <!-- Actions --> */}
               <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
+                {/* Change this Cart Icon to something cute*/}
                 <a
                   href="#"
                   className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-lg text-emerald-500"
@@ -144,6 +145,7 @@ function Navbar(){
                     2<span className="sr-only"> new emails </span>
                   </span>
                 </a>
+
               </div>
             </nav>
           </div>
