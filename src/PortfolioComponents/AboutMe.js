@@ -20,7 +20,7 @@ function AboutMe(){
                                 <p className="text-blue-200 ">Marketing Manager at Stech</p>
                             </div>
 
-                            <p className="mt-4 text-lg leading-relaxed text-white md:text-xl"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda”.</p>
+                            <p className="mt-4 text-lg leading-relaxed text-white md:text-xl"> Experienced Python developer with expertise in Flask, JavaScript, and React. Proven track record in project success and team leadership. Graduate of Flatiron School's Software Engineering program. Experince with administrative and inventory management. Passionate about merging technology and creativity.</p>
                             
                             <div className="flex items-center justify-between mt-6 md:justify-start">
                                 <button title="left arrow" className="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400">

@@ -18,10 +18,10 @@ function ProjectCard(){
             <span className="text-gray-500">by Fancy Brand</span>
           </div>
 
-          <div className="flex flex-col items-end">
+          {/* <div className="flex flex-col items-end">
             <span className="font-bold text-gray-600 lg:text-lg">$19.99</span>
             <span className="text-sm text-red-500 line-through">$39.99</span>
-          </div>
+          </div> */}
         </div>
       </div>
     )

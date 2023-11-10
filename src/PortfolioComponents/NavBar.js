@@ -96,7 +96,7 @@ function Navbar(){
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
   
                   >
-                    <Link to='/about_me'>About Me</Link>
+                    <Link to="/projects">Projects</Link>
                   </div>
                 </li>
                 <li role="none" className="flex items-stretch">
@@ -107,7 +107,7 @@ function Navbar(){
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
   
                   >
-                    <Link to="/projects">Projects</Link>
+                    <Link to='/about_me'>About Me</Link>
                   </a>
                 </li>
                 <li role="none" className="flex items-stretch">
