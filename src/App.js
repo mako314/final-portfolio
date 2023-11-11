@@ -1,5 +1,5 @@
 import './App.css';
-import { useNavigate, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 
 //Main Page Imports
 import NavBar from './PortfolioComponents/NavBar';
@@ -12,6 +12,7 @@ import ProjectCollection from './ProjectComponents/ProjectCollection';
 import Contact from './PortfolioComponents/Contact';
 
 import EquipMeDisplay from './ProjectDisplays/EquipMeDisplay';
+import HobbyWarsDisplay from './ProjectDisplays/HobbyWarsDisplay';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
       <Route path='/projects' element={<ProjectCollection />} />
 
       <Route path='/EquipMe' element={<EquipMeDisplay />} />
-
+      <Route path='/HobbyWars' element={<HobbyWarsDisplay />} />
       </Routes>
 
       <Footer/>
