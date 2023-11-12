@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
 import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
-function EquipMeMessagingDisplay({openModal, goToPreviousImage, goToNextImage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen}) {
+function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen}) {
 
   return (
     <div className="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
@@ -59,7 +59,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousImage, goToNextImage, i
                 <p className="text-sm text-[#636262]">Senior Webflow Developer</p>
                   {/* Left arrow */}
                   <button
-                  onClick={goToPreviousImage}
+                  onClick={goToPreviousPage}
                   className=" mt-4 left-4 top-1/2 transform -translate-y-1/2 text-white z-10"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
@@ -69,7 +69,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousImage, goToNextImage, i
 
                 {/* Right arrow */}
                 <button
-                  onClick={goToNextImage}
+                  onClick={goToNextPage}
                   className=" mt-4 ml-4 right-4 top-1/2 transform -translate-y-1/2 text-white z-10"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">

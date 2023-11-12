@@ -1,7 +1,7 @@
 import React from 'react';
 import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
-function EquipMeTestDisplay({openModal, goToPreviousImage, goToNextImage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
+function EquipMeTestDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
 
   return (
     <div className="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
@@ -59,7 +59,7 @@ function EquipMeTestDisplay({openModal, goToPreviousImage, goToNextImage, images
                 <div className="flex justify-between items-center">
                   {/* Left arrow */}
                   <button
-                  onClick={goToPreviousImage}
+                  onClick={goToPreviousPage}
                   aria-label="Previous"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
@@ -69,7 +69,7 @@ function EquipMeTestDisplay({openModal, goToPreviousImage, goToNextImage, images
 
                 {/* Right arrow */}
                 <button
-                  onClick={goToNextImage}
+                  onClick={goToNextPage}
                   aria-label="Next"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">

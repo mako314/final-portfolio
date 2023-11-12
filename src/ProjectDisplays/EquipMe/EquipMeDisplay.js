@@ -14,14 +14,15 @@ function EquipMeDisplay(){
     const [selectedImage, setSelectedImage] = useState(null)
     const [selectedIndex, setSelectedIndex] = useState(0);
 
+    console.log(selectedIndex)
     const images = [
       equipmeHomeImage,
       EquipMeMessagingImage,
     ]
 
     const projectDisplayComponents = [
-      <EquipMeMessagingDisplay/>,
-      <EquipMeTestDisplay/>
+      EquipMeTestDisplay,
+      EquipMeMessagingDisplay,
     ]
 
     
@@ -47,21 +48,20 @@ function EquipMeDisplay(){
         e.stopPropagation();
     }
 
-    const goToPreviousImage = () => {
+    const goToPreviousPage = () => {
         setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : images.length - 1));
     }
     
-      const goToNextImage = () => {
+      const goToNextPage = () => {
         setSelectedIndex((prevIndex) => (prevIndex + 1) % images.length);
     }
 
     useEffect(() => {
         function handleKeyDown(event) {
-          if (!isModalOpen) return;
           if (event.key === 'ArrowLeft') {
-            goToPreviousImage();
+            goToPreviousPage();
           } else if (event.key === 'ArrowRight') {
-            goToNextImage();
+            goToNextPage();
           }
         }
     
@@ -70,16 +70,16 @@ function EquipMeDisplay(){
         return () => {
           window.removeEventListener('keydown', handleKeyDown);
         };
-      }, [isModalOpen])
+      }, [isModalOpen, goToPreviousPage, goToNextPage])
 
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
         <div className="bg-gray-50 mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-          <EquipMeTestDisplay 
+          <SelectedComponent  
           openModal={openModal} 
-          goToPreviousImage={goToPreviousImage} 
-          goToNextImage={goToNextImage} 
+          goToPreviousPage={goToPreviousPage} 
+          goToNextPage={goToNextPage} 
           images={images} 
           selectedImage={selectedImage} 
           selectedIndex={selectedIndex} 
