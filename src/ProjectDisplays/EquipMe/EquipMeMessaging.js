@@ -4,7 +4,7 @@ import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen}) {
 
-
+  // I was coding on my laptop and ended up on main :()
 
   return (
     <section>
