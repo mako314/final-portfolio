@@ -49,23 +49,27 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
 
         <div className="flex flex-col gap-4">
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-0">
-            <img alt="" src="https://static.thenounproject.com/png/3627105-200.png" className="h-13 w-13 inline-block object-contain" />
+            <img
+              src="https://static.thenounproject.com/png/877495-200.png"
+              alt=""
+              className="object-contain w-16 h-16"
+            />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Flexibility</p>
-              <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+              <p className="font-semibold">Get In Touch</p>
+              <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-1">
             <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Scale</p>
-              <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+              <p className="font-semibold">User To Owner</p>
+              <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-2">
             <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Support</p>
+              <p className="font-semibold">Owner To User</p>
               <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
             </div>
           </span>
