@@ -70,18 +70,6 @@ function EquipMeDisplay(){
             {selectedImage && (
             <div className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50">
             <div className=" relative rounded-lg bg-white max-w-4xl max-h-full overflow-auto p-6">
-              
-
-            {/* Left arrow */}
-            <button
-              onClick={goToPreviousImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-10"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-              </svg>
-            </button>
-            
             <button
                 onClick={closeModal}
                 className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200"
@@ -91,23 +79,39 @@ function EquipMeDisplay(){
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                   </svg>
             </button>
-
-            {/* Right arrow */}
-            <button
-              onClick={goToNextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-10"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-              </svg>
-            </button>
-
                 <img
                 src={images[selectedIndex]} // The full-size image path
                 alt="EquipMe home page enlarged"
                 className="w-full h-auto mx-auto"
                 />
-                <p className="text-center bg-gray-200 px-4 py-2 rounded-lg"> EquipMe Home Page</p>
+                
+
+                <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
+
+                {/* Left arrow */}
+                <button
+                  onClick={goToPreviousImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-10"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+                </button>
+
+                <p className="text-center"> EquipMe Home Page</p>
+                
+                {/* Right arrow */}
+                <button
+                  onClick={goToNextImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-10"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </button>
+                </div>
+              
+                
                 
             </div>
             </div>
