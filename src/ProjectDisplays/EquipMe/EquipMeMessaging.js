@@ -60,7 +60,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-1">
-            <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
+            <img alt="" src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png" className="object-contain w-16 h-16" />
             <div className="ml-4 flex flex-col">
               <p className="font-semibold">User To Owner</p>
               <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
@@ -70,7 +70,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
             <div className="ml-4 flex flex-col">
               <p className="font-semibold">Owner To User</p>
-              <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+              <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
             </div>
           </span>
         </div>
