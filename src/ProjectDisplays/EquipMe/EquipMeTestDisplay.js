@@ -28,7 +28,7 @@ function EquipMeTestDisplay({openModal, goToPreviousPage, goToNextPage, images, 
                   </svg>
             </button>
                 <img
-                src={images[selectedIndex]} // The full-size image path
+                src={images[selectedIndex]} // Opted to import the images into an array and have it hardcoded
                 alt="EquipMe home page enlarged"
                 className="w-full h-auto mx-auto"
                 />

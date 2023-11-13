@@ -4,19 +4,26 @@ import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen}) {
 
+  // I was coding on my laptop and ended up on main :()
+
   return (
-    <div className="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
+    <section>
+  
+    <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
+      
+      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">From Scratch to Success: <br></br> No Add-ons, Just Connection.</h2>
+      
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
+      <div className="relative group cursor-pointer">
+      
+      <img alt="Equip Me Messaging System" src={EquipMeMessagingImage} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
-            <div className="relative group cursor-pointer">
-            <img src={EquipMeMessagingImage} alt="EquipMe home page" className="rounded-xl inline-block h-full w-full max-w-[640px] object-contain" />
-
-            {/* Overlay: hidden by default, shown on hover */}
-            <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+      <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View    </p>
-            </div>
-            </div>
+      </div>
+      </div>
 
-            {selectedImage && (
+      {selectedImage && (
             <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
             <div className=" relative rounded-lg bg-white max-w-4xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
             <button
@@ -33,51 +40,45 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
                 alt="EquipMe home page enlarged"
                 className="w-full h-auto mx-auto"
                 />
-                
-
                 <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-
-              
-
-                <p className="text-center"> EquipMe Home Page</p>
-
-                
-                </div>
-              
-                
-                
-            </div>
+                <p className="text-center"> EquipMe Messaging System </p>
+                </div> 
+              </div>
             </div>
             )}
-            
-            <div className="sm:max-w-sm md:max-w-md lg:max-w-lg">
-                <p className="mb-6 max-w-md text-[#636262] md:mb-10 lg:mb-12"> EquipMe was founded with a simple yet powerful idea: to create a platform that connects people who need equipment for various tasks with those who have tools and machinery sitting idle. The inspiration behind EquipMe stemmed from a personal experience – observing a family member frequently seeking equipment rentals and realizing that many people may own valuable tools that often went unused.
-                <br></br><br></br>
-                Our mission is to make equipment rental more accessible and efficient for everyone. Whether you're a homeowner tackling a DIY project, a professional in need of specialized gear, or someone with tools gathering dust in your garage, EquipMe was built to meet your needs. We believe that by facilitating equipment sharing, we can not only save individuals time and money but also foster a stronger sense of community and collaboration among users.
-                </p>
-                <p className="font-bold">John Robert</p>
-                <p className="text-sm text-[#636262]">Senior Webflow Developer</p>
-                  {/* Left arrow */}
-                  <button
-                  onClick={goToPreviousPage}
-                  className=" mt-4 left-4 top-1/2 transform -translate-y-1/2 text-white z-10"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                  </svg>
-                </button>
 
-                {/* Right arrow */}
-                <button
-                  onClick={goToNextPage}
-                  className=" mt-4 ml-4 right-4 top-1/2 transform -translate-y-1/2 text-white z-10"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-                </button>
+        <div className="flex flex-col gap-4">
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-0">
+            <img
+              src="https://static.thenounproject.com/png/877495-200.png"
+              alt=""
+              className="object-contain w-16 h-16"
+            />
+            <div className="ml-4 flex flex-col">
+              <p className="font-semibold">Get In Touch</p>
+              <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
             </div>
+          </span>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-1">
+            <img alt="" src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png" className="object-contain w-16 h-16" />
+            <div className="ml-4 flex flex-col">
+              <p className="font-semibold">User To Owner</p>
+              <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
             </div>
+          </span>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-2">
+            <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
+            <div className="ml-4 flex flex-col">
+              <p className="font-semibold">Owner To User</p>
+              <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
+            </div>
+          </span>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
   )
 }
 
