@@ -3,17 +3,7 @@ import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMe
 
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
-  const changeIndexTo1 = (newIndex) => {
-    
-    setSelectedIndex(newIndex);
-  }
-
-  const changeIndexTo2 = (newIndex) => {
-    
-    setSelectedIndex(newIndex);
-  }
-
-  const changeIndexTo3 = (newIndex) => {
+  const changeIndex = (newIndex) => {
     
     setSelectedIndex(newIndex);
   }
@@ -31,7 +21,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
       <img alt="Equip Me Messaging System" src={EquipMeMessagingImage} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
-            <p className="text-white text-xl border p-4 rounded-md">   View    </p>
+            <p className="text-white text-xl border p-4 rounded-md">   View </p>
       </div>
       </div>
 
@@ -60,7 +50,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             )}
 
         <div className="flex flex-col gap-4">
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo1(1)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
               src="https://static.thenounproject.com/png/877495-200.png"
               alt="Create a Message"
@@ -71,7 +61,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
               <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo2(2)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(2)}>
             <img 
             src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png"
             alt="Two People Connecting" 
@@ -82,7 +72,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
               <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo2(3)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(3)}>
             <img 
             src="https://cdn.iconscout.com/icon/premium/png-256-thumb/construction-tool-rental-2991537-2508877.png"
             alt="Equipment Rental" 

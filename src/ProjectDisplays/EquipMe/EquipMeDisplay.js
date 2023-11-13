@@ -7,8 +7,7 @@ import testPhoto from '../../Assets/testPhoto.PNG'
 import EquipMeTestDisplay from "./EquipMeTestDisplay"
 import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
 import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
-
-
+import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
 
 function EquipMeDisplay(){
 
@@ -27,9 +26,9 @@ function EquipMeDisplay(){
       EquipMeTestDisplay,
       EquipMeMessagingDisplay,
       EquipMeMessagingUserToOwner,
+      EquipMeMessagingOwnerToUser,
     ]
 
-    
     const openModal = (image) => {
         setSelectedImage(image)
     }
@@ -53,11 +52,11 @@ function EquipMeDisplay(){
     }
 
     const goToPreviousPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : images.length - 1));
+        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
     }
     
       const goToNextPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
     }
 
     useEffect(() => {

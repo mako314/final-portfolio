@@ -1,23 +1,14 @@
 import React, { useState } from 'react';
-import testPhoto from '../../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+import testPhoto from '../../../Assets/testPhoto.PNG'
 
-function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
+function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
-  const changeIndexTo1 = (newIndex) => {
+  console.log("You're in Part 2")
+
+  const changeIndex = (newIndex) => {
     
     setSelectedIndex(newIndex);
   }
-
-  const changeIndexTo2 = (newIndex) => {
-    
-    setSelectedIndex(newIndex);
-  }
-
-  const changeIndexTo3 = (newIndex) => {
-    
-    setSelectedIndex(newIndex);
-  }
-
 
   return (
     <section>
@@ -29,7 +20,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me Messaging System" src={testPhoto} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me User To Owner" src={testPhoto} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View    </p>
@@ -61,7 +52,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
             )}
 
         <div className="flex flex-col gap-4">
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo1(1)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
               src="https://static.thenounproject.com/png/877495-200.png"
               alt="Create a Message"
@@ -72,7 +63,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
               <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] border-l-4 border-black cursor-pointer" onClick={() => changeIndexTo2(2)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] border-l-4 border-black cursor-pointer" onClick={() => changeIndex(2)}>
             <img 
             src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png"
             alt="Two People Connecting" 
@@ -83,7 +74,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
               <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo2(3)}>
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(3)}>
             <img 
             src="https://cdn.iconscout.com/icon/premium/png-256-thumb/construction-tool-rental-2991537-2508877.png"
             alt="Equipment Rental" 
@@ -103,4 +94,4 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
   )
 }
 
-export default EquipMeMessagingUserToOwner;
+export default EquipMeMessagingOwnerToUser;
