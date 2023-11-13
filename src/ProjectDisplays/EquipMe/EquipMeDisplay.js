@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+import testPhoto from '../../Assets/testPhoto.PNG'
 
 //Individual Display pages as to avoid having a backend / delay
 import EquipMeTestDisplay from "./EquipMeTestDisplay"
-import EquipMeMessagingDisplay from "./EquipMeMessaging"
+import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
+import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
 
 
 
@@ -18,11 +20,13 @@ function EquipMeDisplay(){
     const images = [
       equipmeHomeImage,
       EquipMeMessagingImage,
+      testPhoto,
     ]
 
     const projectDisplayComponents = [
       EquipMeTestDisplay,
       EquipMeMessagingDisplay,
+      EquipMeMessagingUserToOwner,
     ]
 
     
@@ -86,6 +90,7 @@ function EquipMeDisplay(){
           closeModal={closeModal} 
           handleModalContentClick={handleModalContentClick}
           handleOverlayClick={handleOverlayClick}
+          setSelectedIndex={setSelectedIndex}
           />
         </div>
     )

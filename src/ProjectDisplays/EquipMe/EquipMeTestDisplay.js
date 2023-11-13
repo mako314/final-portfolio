@@ -32,18 +32,10 @@ function EquipMeTestDisplay({openModal, goToPreviousPage, goToNextPage, images, 
                 alt="EquipMe home page enlarged"
                 className="w-full h-auto mx-auto"
                 />
-                
 
                 <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-
-              
-
                 <p className="text-center"> EquipMe Home Page</p>
-
-                
-                </div>
-              
-                
+                </div>   
                 
             </div>
             </div>

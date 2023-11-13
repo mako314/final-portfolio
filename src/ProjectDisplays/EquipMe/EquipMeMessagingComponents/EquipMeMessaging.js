@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
-import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
-import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
+import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
 
-function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen}) {
+function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
-  // I was coding on my laptop and ended up on main :()
+  const changeIndexTo1 = (newIndex) => {
+    
+    setSelectedIndex(newIndex);
+  }
+
+  const changeIndexTo2 = (newIndex) => {
+    
+    setSelectedIndex(newIndex);
+  }
+
+  const changeIndexTo3 = (newIndex) => {
+    
+    setSelectedIndex(newIndex);
+  }
 
   return (
     <section>
@@ -48,10 +60,10 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             )}
 
         <div className="flex flex-col gap-4">
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-0">
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo1(1)}>
             <img
               src="https://static.thenounproject.com/png/877495-200.png"
-              alt=""
+              alt="Create a Message"
               className="object-contain w-16 h-16"
             />
             <div className="ml-4 flex flex-col">
@@ -59,15 +71,23 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
               <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-1">
-            <img alt="" src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png" className="object-contain w-16 h-16" />
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo2(2)}>
+            <img 
+            src="https://cdni.iconscout.com/illustration/premium/thumb/agreement-9843440-8036146.png"
+            alt="Two People Connecting" 
+            className="object-contain w-16 h-16" 
+            />
             <div className="ml-4 flex flex-col">
               <p className="font-semibold">User To Owner</p>
               <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
             </div>
           </span>
-          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]" href="#w-tabs-1-data-w-pane-2">
-            <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" className="w-13 inline-block" />
+          <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndexTo2(3)}>
+            <img 
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/construction-tool-rental-2991537-2508877.png"
+            alt="Equipment Rental" 
+            className="object-contain w-16 h-16" 
+            />
             <div className="ml-4 flex flex-col">
               <p className="font-semibold">Owner To User</p>
               <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
