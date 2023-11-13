@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+import testPhoto from '../../Assets/testPhoto.PNG'
 
 //Individual Display pages as to avoid having a backend / delay
 import EquipMeTestDisplay from "./EquipMeTestDisplay"
-import EquipMeMessagingDisplay from "./EquipMeMessaging"
-
-
+import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
+import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
+import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
 
 function EquipMeDisplay(){
 
@@ -18,14 +19,16 @@ function EquipMeDisplay(){
     const images = [
       equipmeHomeImage,
       EquipMeMessagingImage,
+      testPhoto,
     ]
 
     const projectDisplayComponents = [
       EquipMeTestDisplay,
       EquipMeMessagingDisplay,
+      EquipMeMessagingUserToOwner,
+      EquipMeMessagingOwnerToUser,
     ]
 
-    
     const openModal = (image) => {
         setSelectedImage(image)
     }
@@ -49,11 +52,11 @@ function EquipMeDisplay(){
     }
 
     const goToPreviousPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : images.length - 1));
+        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
     }
     
       const goToNextPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
     }
 
     useEffect(() => {
@@ -86,6 +89,7 @@ function EquipMeDisplay(){
           closeModal={closeModal} 
           handleModalContentClick={handleModalContentClick}
           handleOverlayClick={handleOverlayClick}
+          setSelectedIndex={setSelectedIndex}
           />
         </div>
     )
