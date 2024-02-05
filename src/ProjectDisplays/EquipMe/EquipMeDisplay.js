@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import testPhoto from '../../Assets/testPhoto.PNG'
 
 //Individual Display pages as to avoid having a backend / delay
