@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeInternalMessagingSystem.PNG'
+
+// Images
+import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
+import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+
 import testPhoto from '../../Assets/testPhoto.PNG'
 
-//Individual Display pages as to avoid having a backend / delay
+// Individual Display pages as to avoid having a backend / delay
 import EquipMeTestDisplay from "./EquipMeTestDisplay"
 import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
 import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
@@ -19,7 +24,8 @@ function EquipMeDisplay(){
     const images = [
       equipmeHomeImage,
       EquipMeMessagingImage,
-      testPhoto,
+      EquipMeMessagingOwnerToUserImage,
+      EquipMeMessagingUserToOwnerImage,
     ]
 
     const projectDisplayComponents = [

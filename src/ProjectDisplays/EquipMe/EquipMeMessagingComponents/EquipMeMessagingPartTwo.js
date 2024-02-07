@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import testPhoto from '../../../Assets/testPhoto.PNG'
+import EquipMeOwnerInboxImage from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
+// import testPhoto from '../../../Assets/testPhoto.PNG'
 
 function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
@@ -20,7 +21,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me User To Owner" src={testPhoto} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me User To Owner" src={EquipMeOwnerInboxImage} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View    </p>
@@ -28,28 +29,21 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
       </div>
 
       {selectedImage && (
-            <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
-            <div className=" relative rounded-lg bg-white max-w-4xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
-            <button
-                onClick={closeModal}
-                className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
+        <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
+          <div className="relative rounded-lg bg-white max-w-7xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
+            <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
             </button>
-                <img
-                src={images[selectedIndex]} // The full-size image path
-                alt="EquipMe home page enlarged"
-                className="w-full h-auto mx-auto"
-                />
-                <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-                <p className="text-center"> EquipMe Messaging System </p>
-                </div> 
-              </div>
-            </div>
-            )}
+            <img src={images[selectedIndex]} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
+            <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
+              <p className="text-center"> EquipMe Messaging System </p>
+            </div> 
+          </div>
+        </div>
+      )}
 
         <div className="flex flex-col gap-4">
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
