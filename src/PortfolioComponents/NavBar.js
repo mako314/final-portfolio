@@ -90,35 +90,35 @@ function Navbar(){
               >
                 <li role="none" className="flex items-stretch">
                    
-                  <div
+                <Link to="/projects"
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
   
                   >
-                    <Link to="/projects">Projects</Link>
-                  </div>
+                    Projects
+                </Link>
                 </li>
                 <li role="none" className="flex items-stretch">
-                  <a
+                  <Link to='/about_me'
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
   
                   >
-                    <Link to='/about_me'>About Me</Link>
-                  </a>
+                    About Me
+                  </Link>
                 </li>
                 <li role="none" className="flex items-stretch">
-                  <a
+                  <Link to="/contact"
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
   
                   >
-                    <Link to="/contact">Contact</Link>
-                  </a>
+                    Contact
+                  </Link>
                 </li>
               </ul>
               {/*      <!-- Actions --> */}

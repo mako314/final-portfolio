@@ -5,7 +5,7 @@ import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG
 import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
 import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeOwnerDashboard from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
+import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
 
 
 // Individual Display pages as to avoid having a backend / delay
@@ -13,7 +13,7 @@ import EquipMeTestDisplay from "./EquipMeTestDisplay"
 import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
 import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
 import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
-import EquipMeDashBoard from "./EquipMeDashboards"
+import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 
 function EquipMeDisplay(){
 
@@ -27,7 +27,7 @@ function EquipMeDisplay(){
       EquipMeMessagingImage,
       EquipMeMessagingOwnerToUserImage,
       EquipMeMessagingUserToOwnerImage,
-      EquipMeOwnerDashboard
+      EquipMeOwnerDashboardImage
     ]
 
     const projectDisplayComponents = [
@@ -35,7 +35,7 @@ function EquipMeDisplay(){
       EquipMeMessagingDisplay,
       EquipMeMessagingUserToOwner,
       EquipMeMessagingOwnerToUser,
-      EquipMeDashBoard
+      EquipMeOwnerDash
     ]
 
     const openModal = (image) => {

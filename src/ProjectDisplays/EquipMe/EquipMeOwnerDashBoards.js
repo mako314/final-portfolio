@@ -1,8 +1,7 @@
 import React from 'react';
-import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-import EquipMeOwnerDashboard from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
+import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
 
-function EquipMeDashBoard({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
+function EquipMeOwnerDash({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
 
   return  (
     <>
@@ -10,7 +9,7 @@ function EquipMeDashBoard({openModal, goToPreviousPage, goToNextPage, images, se
         <div className="container mx-auto px-4 py-8">
         <div className="relative group cursor-pointer"> 
 
-          <img src={EquipMeOwnerDashboard} alt="EquipMe Owner Dashboard" className="mx-auto h-auto max-w-full rounded-lg shadow-md" />
+          <img src={EquipMeOwnerDashboardImage} alt="EquipMe Owner Dashboard" className="mx-auto h-auto max-w-full rounded-lg shadow-md" />
           <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View </p>
           </div>
@@ -71,10 +70,10 @@ function EquipMeDashBoard({openModal, goToPreviousPage, goToNextPage, images, se
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </button>
-                </div>
+          </div>
       </div>
     </>
   )
 }
 
-export default EquipMeDashBoard;
+export default EquipMeOwnerDash;
