@@ -9,7 +9,7 @@ import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/Equip
 
 
 // Individual Display pages as to avoid having a backend / delay
-import EquipMeTestDisplay from "./EquipMeTestDisplay"
+import EquipMeHomePage from "./EquipMeHomePage"
 import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
 import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
 import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
@@ -31,7 +31,7 @@ function EquipMeDisplay(){
     ]
 
     const projectDisplayComponents = [
-      EquipMeTestDisplay,
+      EquipMeHomePage,
       EquipMeMessagingDisplay,
       EquipMeMessagingUserToOwner,
       EquipMeMessagingOwnerToUser,
