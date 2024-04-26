@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 // Images
@@ -38,6 +38,7 @@ function EquipMeDisplay(){
       EquipMeOwnerDash
     ]
 
+
     const openModal = (image) => {
         setSelectedImage(image)
     }
@@ -60,30 +61,40 @@ function EquipMeDisplay(){
         e.stopPropagation();
     }
 
-    const goToPreviousPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
-    }
+    // https://react.dev/reference/react/useCallback
+
+    // const goToPreviousPage = () => {
+    //     setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+    // }
     
-      const goToNextPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+    //   const goToNextPage = () => {
+    //     setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+    // }
+
+    const goToPreviousPage = useCallback(() => {
+      setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+  }, [projectDisplayComponents.length]);
+
+  const goToNextPage = useCallback(() => {
+      setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+  }, [projectDisplayComponents.length]);
+
+
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.key === 'ArrowLeft') {
+        goToPreviousPage();
+      } else if (event.key === 'ArrowRight') {
+        goToNextPage();
+      }
     }
 
-    useEffect(() => {
-        function handleKeyDown(event) {
-          if (event.key === 'ArrowLeft') {
-            goToPreviousPage();
-          } else if (event.key === 'ArrowRight') {
-            goToNextPage();
-          }
-        }
-    
-        window.addEventListener('keydown', handleKeyDown);
-    
-        return () => {
-          window.removeEventListener('keydown', handleKeyDown);
-        };
-      }, [isModalOpen, goToPreviousPage, goToNextPage])
+    window.addEventListener('keydown', handleKeyDown);
 
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isModalOpen, goToPreviousPage, goToNextPage])
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
