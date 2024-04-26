@@ -6,6 +6,8 @@ import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMes
 import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
 import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
+import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
+
 
 
 // Individual Display pages as to avoid having a backend / delay
@@ -24,7 +26,7 @@ function EquipMeDisplay(){
     console.log(selectedIndex)
     const images = [
       equipmeHomeImage,
-      EquipMeMessagingImage,
+      EquipMeStripeOnboard,
       EquipMeMessagingOwnerToUserImage,
       EquipMeMessagingUserToOwnerImage,
       EquipMeOwnerDashboardImage

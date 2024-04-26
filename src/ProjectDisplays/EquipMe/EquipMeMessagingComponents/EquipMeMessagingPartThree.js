@@ -16,7 +16,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">From Scratch to Success: <br></br> No Add-ons, Just Connection.</h2>
+      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">  <br></br> No Add-ons, Just Connection.</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">

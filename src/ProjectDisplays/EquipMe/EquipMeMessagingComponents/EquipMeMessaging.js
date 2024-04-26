@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG';
 
+import EquipMeStripeOnboard from '../../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
+
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
   const changeIndex = (newIndex) => {
@@ -21,7 +23,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me Messaging System" src={EquipMeMessagingImage} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me Messaging System" src={EquipMeStripeOnboard} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View </p>
@@ -55,7 +57,10 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             />
             <div className="ml-4 flex flex-col">
               <p className="font-semibold">Get In Touch</p>
-              <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
+              <p className="text-sm text-[#636262]"> Upon sign-up, create a Stripe account immediately, or save it for later!</p>
+              
+              <br/>
+              <p className="text-sm text-[#636262]">*Required to be paid.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(2)}>
