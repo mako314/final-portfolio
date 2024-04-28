@@ -6,6 +6,7 @@ import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMes
 import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
 import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
+import EquipMeOwnerCsvUpload from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerCSVUpload.PNG'
 import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
 
 
@@ -27,8 +28,8 @@ function EquipMeDisplay(){
     const images = [
       equipmeHomeImage,
       EquipMeStripeOnboard,
+      EquipMeOwnerCsvUpload,
       EquipMeMessagingOwnerToUserImage,
-      EquipMeMessagingUserToOwnerImage,
       EquipMeOwnerDashboardImage
     ]
 
