@@ -70,8 +70,8 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             className="object-contain w-16 h-16" 
             />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">User To Owner</p>
-              <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
+              <p className="font-semibold">Diverse Upload Options for Owners</p>
+              <p className="text-sm text-[#636262]">From CSV to XML and beyond, we've got your uploads covered, ensuring seamless connectivity at every stage.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(3)}>

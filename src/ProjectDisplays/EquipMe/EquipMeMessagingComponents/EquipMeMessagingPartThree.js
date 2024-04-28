@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 // import testPhoto from '../../../Assets/testPhoto.PNG'
 import EquipMeUserInbox from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 
+import EquipMeRentalMonitor from '../../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
+
+
 function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
   console.log("You're in Part 2")
@@ -16,12 +19,12 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">  <br></br> No Add-ons, Just Connection.</h2>
+      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl"> Monitor and handle all your rentals in one convienent place</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me User To Owner" src={EquipMeUserInbox} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me User To Owner" src={EquipMeRentalMonitor} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View    </p>

@@ -17,7 +17,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">One Click Many uploads.<br></br> Supporting CSV, XML, XLSX</h2>
+    <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">Batch Upload Your Equipment<br />Supporting CSV, XML, XLSX Files</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
@@ -47,7 +47,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
       )}
 
         <div className="flex flex-col gap-4">
-        <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
+        <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
               alt="Create a Message"
