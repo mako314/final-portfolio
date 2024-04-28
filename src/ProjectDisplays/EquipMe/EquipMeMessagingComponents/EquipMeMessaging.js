@@ -52,7 +52,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
-              alt="Create a Message"
+              alt="Stripe Logo"
               className="object-contain w-12 h-12"
             />
             <div className="ml-4 flex flex-col">

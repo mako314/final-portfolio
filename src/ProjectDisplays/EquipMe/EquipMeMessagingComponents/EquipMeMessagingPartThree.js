@@ -19,7 +19,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl"> Monitor and handle all your rentals in one convienent place</h2>
+    <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">Effortless Rental Management, All in One Place</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
@@ -42,7 +42,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
             </button>
             <img src={images[selectedIndex]} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
             <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-              <p className="text-center"> EquipMe Messaging System </p>
+              <p className="text-center"> EquipMe Owner Rental Tracking </p>
             </div> 
           </div>
         </div>
@@ -50,14 +50,17 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
 
         <div className="flex flex-col gap-4">
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
-            <img
-              src="https://static.thenounproject.com/png/877495-200.png"
-              alt="Create a Message"
-              className="object-contain w-16 h-16"
+          <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
+              alt="Stripe Logo"
+              className="object-contain w-12 h-12"
             />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Get In Touch</p>
-              <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
+              <p className="font-semibold">Get Paid Immediately</p>
+              <p className="text-sm text-[#636262]"> Upon sign-up, create a Stripe account or save it for later!</p>
+              
+              <br/>
+              <p className="text-sm text-[#636262]">*Required to be paid.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px]  cursor-pointer" onClick={() => changeIndex(2)}>
@@ -67,8 +70,8 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
             className="object-contain w-16 h-16" 
             />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">User To Owner</p>
-              <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
+              <p className="font-semibold">Diverse Upload Options for Owners</p>
+              <p className="text-sm text-[#636262]">From CSV to XML and beyond, we've got your uploads covered, ensuring seamless connectivity at every stage.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] border-l-4 border-black cursor-pointer" onClick={() => changeIndex(3)}>
@@ -77,10 +80,10 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
             alt="Equipment Rental" 
             className="object-contain w-16 h-16" 
             />
-            <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Owner To User</p>
-              <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
-            </div>
+          <div className="ml-4 flex flex-col">
+            <p className="font-semibold">Streamline Your Rental Experience</p>
+            <p className="text-sm text-[#636262]">Effortlessly monitor and manage all your rentals from one convenient location.</p>
+          </div>
           </span>
         </div>
 

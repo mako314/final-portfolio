@@ -40,7 +40,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
             </button>
             <img src={images[selectedIndex]} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
             <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-              <p className="text-center"> EquipMe Messaging System </p>
+              <p className="text-center"> EquipMe CSV/XML/ XLSX Uploader </p>
             </div> 
           </div>
         </div>
@@ -50,7 +50,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
         <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
-              alt="Create a Message"
+              alt="Stripe Logo"
               className="object-contain w-12 h-12"
             />
             <div className="ml-4 flex flex-col">
