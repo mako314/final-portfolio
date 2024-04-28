@@ -80,10 +80,10 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             alt="Equipment Rental" 
             className="object-contain w-16 h-16" 
             />
-            <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Owner To User</p>
-              <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
-            </div>
+          <div className="ml-4 flex flex-col">
+            <p className="font-semibold">Streamline Your Rental Experience</p>
+            <p className="text-sm text-[#636262]">Effortlessly monitor and manage all your rentals from one convenient location.</p>
+          </div>
           </span>
         </div>
 

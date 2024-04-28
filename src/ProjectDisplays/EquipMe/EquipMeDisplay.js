@@ -2,9 +2,9 @@ import React, { useState, useEffect, useCallback } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 // Images
-import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
-import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+// import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
+// import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
 import EquipMeRentalMonitor from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
 import EquipMeOwnerCsvUpload from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerCsvUpload/EquipMeOwnerCSVUpload.PNG'
@@ -14,9 +14,9 @@ import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwne
 
 // Individual Display pages as to avoid having a backend / delay
 import EquipMeHomePage from "./EquipMeHomePage"
-import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
-import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
-import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
+import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
+import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
+import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
 import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 
 function EquipMeDisplay(){
