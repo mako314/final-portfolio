@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 // Images
-import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
-import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
+// import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
+// import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
+import EquipMeRentalMonitor from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
+import EquipMeOwnerCsvUpload from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerCsvUpload/EquipMeOwnerCSVUpload.PNG'
+import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
+
 
 
 // Individual Display pages as to avoid having a backend / delay
 import EquipMeHomePage from "./EquipMeHomePage"
-import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMeMessaging"
-import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMeMessagingPartTwo"
-import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMeMessagingPartThree"
+import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
+import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
+import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
 import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 
 function EquipMeDisplay(){
@@ -24,9 +28,9 @@ function EquipMeDisplay(){
     console.log(selectedIndex)
     const images = [
       equipmeHomeImage,
-      EquipMeMessagingImage,
-      EquipMeMessagingOwnerToUserImage,
-      EquipMeMessagingUserToOwnerImage,
+      EquipMeStripeOnboard,
+      EquipMeOwnerCsvUpload,
+      EquipMeRentalMonitor,
       EquipMeOwnerDashboardImage
     ]
 
@@ -37,6 +41,7 @@ function EquipMeDisplay(){
       EquipMeMessagingOwnerToUser,
       EquipMeOwnerDash
     ]
+
 
     const openModal = (image) => {
         setSelectedImage(image)
@@ -60,30 +65,40 @@ function EquipMeDisplay(){
         e.stopPropagation();
     }
 
-    const goToPreviousPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
-    }
+    // https://react.dev/reference/react/useCallback
+
+    // const goToPreviousPage = () => {
+    //     setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+    // }
     
-      const goToNextPage = () => {
-        setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+    //   const goToNextPage = () => {
+    //     setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+    // }
+
+    const goToPreviousPage = useCallback(() => {
+      setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+  }, [projectDisplayComponents.length]);
+
+  const goToNextPage = useCallback(() => {
+      setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+  }, [projectDisplayComponents.length]);
+
+
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.key === 'ArrowLeft') {
+        goToPreviousPage();
+      } else if (event.key === 'ArrowRight') {
+        goToNextPage();
+      }
     }
 
-    useEffect(() => {
-        function handleKeyDown(event) {
-          if (event.key === 'ArrowLeft') {
-            goToPreviousPage();
-          } else if (event.key === 'ArrowRight') {
-            goToNextPage();
-          }
-        }
-    
-        window.addEventListener('keydown', handleKeyDown);
-    
-        return () => {
-          window.removeEventListener('keydown', handleKeyDown);
-        };
-      }, [isModalOpen, goToPreviousPage, goToNextPage])
+    window.addEventListener('keydown', handleKeyDown);
 
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isModalOpen, goToPreviousPage, goToNextPage])
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 

@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG';
 
+import EquipMeStripeOnboard from '../../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
+
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
 
   const changeIndex = (newIndex) => {
@@ -16,15 +18,15 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">From Scratch to Success: <br></br> No Add-ons, Just Connection.</h2>
+      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl">From Idle to Income: <br></br> Quick Sign-Up, Immediate Payouts.</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me Messaging System" src={EquipMeMessagingImage} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me Messaging System" src={EquipMeStripeOnboard} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
       <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
-            <p className="text-white text-xl border p-4 rounded-md">   View </p>
+            <p className="text-white text-xl border p-4 rounded-md"> View </p>
       </div>
       </div>
 
@@ -39,7 +41,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             </button>
             <img src={images[selectedIndex]} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
             <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-              <p className="text-center"> EquipMe Messaging System </p>
+              <p className="text-center"> Stripe Onboarding </p>
             </div> 
           </div>
         </div>
@@ -49,13 +51,16 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
         <div className="flex flex-col gap-4">
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] border-l-4 border-black [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(1)}>
             <img
-              src="https://static.thenounproject.com/png/877495-200.png"
-              alt="Create a Message"
-              className="object-contain w-16 h-16"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
+              alt="Stripe Logo"
+              className="object-contain w-12 h-12"
             />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Get In Touch</p>
-              <p className="text-sm text-[#636262]"> Get connected with equipment owners and users with few clicks. Private messaging, soon to be hosted on AWS.</p>
+              <p className="font-semibold">Get Paid Immediately</p>
+              <p className="text-sm text-[#636262]"> Upon sign-up, create a Stripe account or save it for later!</p>
+              
+              <br/>
+              <p className="text-sm text-[#636262]">*Required to be paid.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(2)}>
@@ -65,8 +70,8 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             className="object-contain w-16 h-16" 
             />
             <div className="ml-4 flex flex-col">
-              <p className="font-semibold">User To Owner</p>
-              <p className="text-sm text-[#636262]"> Whether you're ready to rent or just browsing, be in touch with the owners every step of the way.</p>
+              <p className="font-semibold">Diverse Upload Options for Owners</p>
+              <p className="text-sm text-[#636262]">From CSV to XML and beyond, we've got your uploads covered, ensuring seamless connectivity at every stage.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(3)}>
@@ -75,10 +80,10 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
             alt="Equipment Rental" 
             className="object-contain w-16 h-16" 
             />
-            <div className="ml-4 flex flex-col">
-              <p className="font-semibold">Owner To User</p>
-              <p className="text-sm text-[#636262]"> Your assets, their adventures. List with ease, connect instantly, and engage seamlessly.</p>
-            </div>
+          <div className="ml-4 flex flex-col">
+            <p className="font-semibold">Streamline Your Rental Experience</p>
+            <p className="text-sm text-[#636262]">Effortlessly monitor and manage all your rentals from one convenient location.</p>
+          </div>
           </span>
         </div>
 
