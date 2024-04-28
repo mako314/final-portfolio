@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function HobbyWarsDisplay(){
+function HobbyWarsCompetitionPage(){
     return(
     <section>
   
@@ -29,5 +29,5 @@ function HobbyWarsDisplay(){
     )
 }
 
-export default HobbyWarsDisplay
+export default HobbyWarsCompetitionPage
 
