@@ -1,6 +1,7 @@
 import React from "react";
 import HobbyWarsUserProfileImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG';
 import UserProfileChallenges from '../../Assets/ProjectImages/HobbyWars/UserProfileChallenges.PNG';
+import UserProfileHobbies from '../../Assets/ProjectImages/HobbyWars/UserProfileHobbies.PNG';
 
 import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/HobbyWars/Logo/HobbyWarLogo.svg';
 
@@ -11,7 +12,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                 {/* Image */}
                 <div className="w-full relative group cursor-pointer">
                 <img src={HobbyWarsUserProfileImage} alt="Hobby Wars User Profile" className="object-cover w-full h-full" />
-                    <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                    <div onClick={() => openModal(HobbyWarsUserProfileImage, "Hobby Wars User Profile")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                         <p className="text-white text-xl border p-4 rounded-md">View</p>
                     </div>
                     {selectedImage && (
@@ -23,9 +24,9 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                     </svg>
                                 </button>
-                                <img src={HobbyWarsUserProfileImage} alt="Hobby Wars User Profile" className="w-full h-auto mx-auto" />
+                                <img src={selectedImage.src} alt="Hobby Wars User Profile" className="w-full h-auto mx-auto" />
                                 <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-                                    <p className="text-center"> Hobby Wars User Profile </p>
+                                    <p className="text-center">{selectedImage.infoText}</p>
                                 </div> 
                             </div>
                         </div>
@@ -33,18 +34,18 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                 </div>
             </div>
           {/* Profile Information */}
-<div className="w-full lg:w-1/2">
-    <div className="flex">  {/* Flex container */}
+          <div className="w-full lg:w-full mt-4 mb-4 py-4 px-4">
+    <div className="flex"> {/* Flex container */}
         {/* Left Column for Profile Name and Role */}
-        <div className="min-w-0">
+        <div className="flex-initial" style={{ flexBasis: '15%' }}> {/* Takes up 60% width */}
             <p className="font-bold"><HobbyWarLogo/> Max Adler - </p>
-            <p className="text-sm text-[#636262]">Totally Real Human</p>
+            <p className="text-sm text-[#636262]">TOTALLY Real Human</p>
         </div>
 
-        {/* Right Column for Character Description - This now grows to fill remaining space */}
-        <div className="flex-grow p-4 bg-gray-100 rounded-md shadow">
-            <div className="text-center">
-                <p className="text-[#636262]">
+        {/* Right Column for Character Description */}
+        <div className="flex-auto" style={{ flexBasis: '85%' }}> {/* Takes up remaining 40% width */}
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+                <p className="text-center text-[#636262]">
                     Max is really happy that this platform has given him a place to host his challenge and find a community of fellow star gazers.
                 </p>
             </div>
@@ -52,10 +53,27 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
     </div>
     {/* Container to hold images side by side */}
     <div className="flex">
-        <img src={UserProfileChallenges} alt="Hobby Wars User Profile" className="mt-4 object-cover w-full h-full shadow-lg" />
-        <img src={UserProfileChallenges} alt="Hobby Wars User Profile" className="mt-4 object-cover w-full h-full shadow-lg" />
+                <div className="w-1/2 relative group cursor-pointer">
+                    <img src={UserProfileChallenges} alt="Hobby Wars User Profile Challenges" className="mt-4 object-cover w-full h-full shadow-lg" />
+                    <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                        <p className="text-white text-xl border p-4 rounded-md">View</p>
+                    </div>
+                </div>
+        
+
+
+        <div className="w-1/2 relative group cursor-pointer">
+        <img src={UserProfileHobbies} alt="Hobby Wars User Profile" className="mt-4 mr-2 ml-2 object-fit w-full h-full shadow-lg" />
+                    <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                        <p className="text-white text-xl border p-4 rounded-md">View</p>
+                    </div>
+                </div>
+
+
     </div>
 </div>
+
+
 
 
 

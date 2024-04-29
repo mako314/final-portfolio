@@ -2,22 +2,18 @@ import React, { useState, useEffect, useCallback } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 // Images
-// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-// import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
-// import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 import HobbyWarsChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG'
 import HobbyWarsLeaderBoardsImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
+
 import HobbyWarsUserProfileImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
+import UserProfileChallenges from '../../Assets/ProjectImages/HobbyWars/UserProfileChallenges.PNG';
+import UserProfileHobbies from '../../Assets/ProjectImages/HobbyWars/UserProfileHobbies.PNG';
+
 
 
 
 // Individual Display pages as to avoid having a backend / delay
-// import EquipMeHomePage from "./EquipMeHomePage"
-// import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
-// import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
-// import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
-// import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 import HobbyWarsCompetition from "./HobbyWarsCompetition"
 import HobbyWarsLeaderBoards from "./HobbyWarsLeaderBoards"
 import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
@@ -25,7 +21,10 @@ import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 function HobbyWarsDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [selectedImage, setSelectedImage] = useState({
+      src: null,
+      infoText: null
+    })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     console.log(selectedIndex)
@@ -33,6 +32,8 @@ function HobbyWarsDisplay(){
       HobbyWarsChallenge,
       HobbyWarsLeaderBoardsImage,
       HobbyWarsUserProfileImage,
+      UserProfileChallenges,
+      UserProfileHobbies,
       HobbyWarsChallengesMapped,
       HobbyWarsChallenge
     ]
@@ -46,8 +47,13 @@ function HobbyWarsDisplay(){
     ]
 
 
-    const openModal = (image) => {
-        setSelectedImage(image)
+    //incorporate alt
+    const openModal = (imageSrc, imageInfoText) => {
+      console.log("THE IMAGE:", imageSrc)
+        setSelectedImage({
+          src: imageSrc,
+          infoText: imageInfoText
+        })
     }
 
     // Function to close the modal

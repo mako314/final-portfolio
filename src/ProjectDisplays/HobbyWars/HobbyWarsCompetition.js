@@ -3,8 +3,8 @@ import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsCh
 import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/HobbyWars/Logo/HobbyWarLogo.svg'
 
 function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}){
-  console.log("goToNextPage", goToNextPage)
-  console.log("goToPreviousPage", goToPreviousPage)
+  // console.log("goToNextPage", goToNextPage)
+  // console.log("goToPreviousPage", goToPreviousPage)
     return(
     <section>
   
@@ -16,10 +16,10 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
             <div className="relative group cursor-pointer"> 
             <img src={HobbyWarsChallenge} alt="" className="object-contain" />
 
-            <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
-            <p className="text-white text-xl border p-4 rounded-md">View</p>
-          </div>
-            {selectedImage && (
+            <div onClick={() => openModal(HobbyWarsChallenge, "Hobby Wars Challenge Page")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+    <p className="text-white text-xl border p-4 rounded-md">View</p>
+</div>
+            {selectedImage.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
                 <div className="relative rounded-lg bg-white max-w-7xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
@@ -28,9 +28,9 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                     </button>
-                    <img src={images[selectedIndex]} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
+                    <img src={selectedImage.src} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
                     <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
-                    <p className="text-center"> EquipMe Onwer Dashboard </p>
+                    <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
                 </div>
                 </div>
