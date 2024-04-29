@@ -7,7 +7,7 @@ import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG
 // import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 import HobbyWarsChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG'
-import HobbyWarsLeaderBoards from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
+import HobbyWarsLeaderBoardsImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
 import HobbyWarsUserProfile from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
 
 
@@ -18,7 +18,8 @@ import HobbyWarsUserProfile from '../../Assets/ProjectImages/HobbyWars/HobbyWars
 // import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
 // import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
 // import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
-import HobbyWarsCompetitionPage from "./HobbyWarsCompetition"
+import HobbyWarsCompetition from "./HobbyWarsCompetition"
+import HobbyWarsLeaderBoards from "./HobbyWarsLeaderBoards"
 
 function HobbyWarsDisplay(){
 
@@ -29,15 +30,15 @@ function HobbyWarsDisplay(){
     console.log(selectedIndex)
     const images = [
       HobbyWarsChallenge,
+      HobbyWarsLeaderBoardsImage,
       HobbyWarsUserProfile,
-      HobbyWarsLeaderBoards,
       HobbyWarsChallengesMapped,
       HobbyWarsChallenge
     ]
 
     const projectDisplayComponents = [
-      HobbyWarsCompetitionPage,
-      // EquipMeMessagingDisplay,
+      HobbyWarsCompetition,
+      HobbyWarsLeaderBoards,
       // EquipMeMessagingUserToOwner,
       // EquipMeMessagingOwnerToUser,
       // EquipMeOwnerDash

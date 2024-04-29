@@ -4,7 +4,7 @@ import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/Hobby
 
 
 
-function HobbyWarsCompetitionPage(openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick){
+function HobbyWarsCompetition(openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick){
     return(
     <section>
   
@@ -79,5 +79,5 @@ function HobbyWarsCompetitionPage(openModal, goToPreviousPage, goToNextPage, ima
     )
 }
 
-export default HobbyWarsCompetitionPage
+export default HobbyWarsCompetition
 
