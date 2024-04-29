@@ -18,7 +18,7 @@ function Navbar(){
               className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
               role="navigation"
             >
-              {/*      <!-- Brand logo --> */}
+              {/*<!-- Brand logo --> */}
               <div
                 id="WindUI"
                 aria-label="WindUI logo"
@@ -48,8 +48,10 @@ function Navbar(){
                   />
                 </svg>
                 </Link>
-                ~Mako~
+                Macolister
               </div>
+
+              
               {/*      <!-- Mobile trigger --> */}
               <button
                 className={`relative order-10 block h-10 w-10 self-center lg:hidden

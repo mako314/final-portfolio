@@ -28,7 +28,7 @@ function HobbyWarsDisplay(){
 
     console.log(selectedIndex)
     const images = [
-      equipmeHomeImage,
+      HobbyWarsChallenge,
       HobbyWarsUserProfile,
       HobbyWarsLeaderBoards,
       HobbyWarsChallengesMapped,
