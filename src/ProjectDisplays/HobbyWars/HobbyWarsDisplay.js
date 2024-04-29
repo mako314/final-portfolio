@@ -8,7 +8,7 @@ import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG
 import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 import HobbyWarsChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG'
 import HobbyWarsLeaderBoardsImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
-import HobbyWarsUserProfile from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
+import HobbyWarsUserProfileImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
 
 
 
@@ -20,6 +20,7 @@ import HobbyWarsUserProfile from '../../Assets/ProjectImages/HobbyWars/HobbyWars
 // import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 import HobbyWarsCompetition from "./HobbyWarsCompetition"
 import HobbyWarsLeaderBoards from "./HobbyWarsLeaderBoards"
+import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
 function HobbyWarsDisplay(){
 
@@ -31,7 +32,7 @@ function HobbyWarsDisplay(){
     const images = [
       HobbyWarsChallenge,
       HobbyWarsLeaderBoardsImage,
-      HobbyWarsUserProfile,
+      HobbyWarsUserProfileImage,
       HobbyWarsChallengesMapped,
       HobbyWarsChallenge
     ]
@@ -39,7 +40,7 @@ function HobbyWarsDisplay(){
     const projectDisplayComponents = [
       HobbyWarsCompetition,
       HobbyWarsLeaderBoards,
-      // EquipMeMessagingUserToOwner,
+      HobbyWarsUserProfile,
       // EquipMeMessagingOwnerToUser,
       // EquipMeOwnerDash
     ]
