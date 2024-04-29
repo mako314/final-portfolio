@@ -101,6 +101,7 @@ function HobbyWarsDisplay(){
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isModalOpen, goToPreviousPage, goToNextPage])
+  
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 

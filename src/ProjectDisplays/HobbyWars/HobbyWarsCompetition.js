@@ -2,9 +2,9 @@ import React from "react"
 import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/HobbyWars/Logo/HobbyWarLogo.svg'
 
-
-
 function HobbyWarsCompetition(openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick){
+  console.log("goToNextPage", goToNextPage)
+  console.log("goToPreviousPage", goToPreviousPage)
     return(
     <section>
   
