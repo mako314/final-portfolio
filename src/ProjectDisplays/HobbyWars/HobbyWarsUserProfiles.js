@@ -2,6 +2,8 @@ import React from "react";
 import HobbyWarsUserProfileImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG';
 import UserProfileChallenges from '../../Assets/ProjectImages/HobbyWars/UserProfileChallenges.PNG';
 import UserProfileHobbies from '../../Assets/ProjectImages/HobbyWars/UserProfileHobbies.PNG';
+import UserReviewEntries from '../../Assets/ProjectImages/HobbyWars/HobbyWarsReviewSubmissions.PNG';
+import UserChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG';
 
 import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/HobbyWars/Logo/HobbyWarLogo.svg';
 
@@ -33,44 +35,90 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                     )}
                 </div>
             </div>
-          {/* Profile Information */}
-          <div className="w-full lg:w-full mt-4 mb-4 py-4 px-4">
+
+{/* Profile Information */}
+
+<div className="w-full lg:w-full mt-4 mb-4 py-4 px-4">
     <div className="flex"> {/* Flex container */}
-        {/* Left Column for Profile Name and Role */}
-        <div className="flex-initial" style={{ flexBasis: '15%' }}> {/* Takes up 60% width */}
-            <p className="font-bold"><HobbyWarLogo/> Max Adler - </p>
-            <p className="text-sm text-[#636262]">TOTALLY Real Human</p>
-        </div>
+    {/* Left Column for Profile Name and Role */}
+    <div className="flex-initial" style={{ flexBasis: '15%' }}> {/* Takes up 60% width */}
+    <p className="font-bold"><HobbyWarLogo/> Max Adler - </p>
+    <p className="text-sm text-[#636262]">TOTALLY Real Human</p>
+    </div>
 
         {/* Right Column for Character Description */}
         <div className="flex-auto" style={{ flexBasis: '85%' }}> {/* Takes up remaining 40% width */}
             <div className="p-4 bg-gray-100 rounded-md shadow">
                 <p className="text-center text-[#636262]">
-                    Max is really happy that this platform has given him a place to host his challenge and find a community of fellow star gazers.
+                    Max is really happy that this platform has given him a place to host his challenge and find a community of fellow star gazers. I most definitely did not make them up, nor sponsor them for this post.
                 </p>
             </div>
         </div>
     </div>
+
     {/* Container to hold images side by side */}
-    <div className="flex">
-                <div className="w-1/2 relative group cursor-pointer">
-                    <img src={UserProfileChallenges} alt="Hobby Wars User Profile Challenges" className="mt-4 object-cover w-full h-full shadow-lg" />
-                    <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges", "User Profile Challenges Displayed")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                        <p className="text-white text-xl border p-4 rounded-md">View</p>
-                    </div>
-                </div>
+<div className="flex">
+        
+        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+                <img src={UserProfileChallenges} alt="Hobby Wars User Profile Challenges" className="object-cover w-full h-full shadow-lg" />
+                <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges", "User Profile Challenges Displayed")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                <p className="text-white text-xl border p-4 rounded-md">View</p>
+            </div>
+        </div>
         
 
 
-        <div className="w-1/2 relative group cursor-pointer">
-        <img src={UserProfileHobbies} alt="Hobby Wars User Profile" className="mt-4 mr-2 ml-2 object-fit w-full h-full shadow-lg" />
-                    <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions", "Users Hobbies and Submissions")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                        <p className="text-white text-xl border p-4 rounded-md">View</p>
-                    </div>
-                </div>
+        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <img src={UserProfileHobbies} alt="Hobby Wars User Profile" className="object-fit w-full h-full shadow-lg" />
+                <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions", "Users Hobbies and Submissions")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                <p className="text-white text-xl border p-4 rounded-md">View</p>
+            </div>
+        </div>
+
+        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+                <img src={UserReviewEntries} alt="Hobby Wars User Profile Challenges" className="object-cover w-full h-full shadow-lg" />
+                <div onClick={() => openModal(UserReviewEntries, "Max Reviewing Entries", "User Reviewing Entries")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                <p className="text-white text-xl border p-4 rounded-md">View</p>
+            </div>
+        </div>
+        
 
 
-    </div>
+        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <img src={UserChallengesMapped} alt="Hobby Wars User Profile" className="object-fit w-full h-full shadow-lg" />
+                <div onClick={() => openModal(UserChallengesMapped, "Max is Excited About All the Challenges!", "Users Challenge Options")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                <p className="text-white text-xl border p-4 rounded-md">View</p>
+            </div>
+        </div>
+
+</div>
+
+
+</div>
+
+
+<div className="flex justify-center items-center mt-8 py-5">
+        {/* Navigation buttons omitted for brevity */}
+         {/* Left arrow */}
+         <button
+                  onClick={goToPreviousPage}
+                  aria-label="Previous"
+                  className='mr-5'
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+                </button>
+
+                {/* Right arrow */}
+                <button
+                  onClick={goToNextPage}
+                  aria-label="Next"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </button>
 </div>
 
 
