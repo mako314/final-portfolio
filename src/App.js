@@ -12,7 +12,7 @@ import ProjectCollection from './ProjectComponents/ProjectCollection';
 import Contact from './PortfolioComponents/Contact';
 
 import EquipMeDisplay from './ProjectDisplays/EquipMe/EquipMeDisplay';
-import HobbyWarsDisplay from './ProjectDisplays/HobbyWarsDisplay';
+import HobbyWarsDisplay from './ProjectDisplays/HobbyWars/HobbyWarsDisplay';
 
 function App() {
   return (

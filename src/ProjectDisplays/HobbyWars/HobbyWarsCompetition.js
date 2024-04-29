@@ -1,4 +1,5 @@
 import React from "react"
+import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 
 
 function HobbyWarsCompetitionPage(){
@@ -9,7 +10,7 @@ function HobbyWarsCompetitionPage(){
             
             <div className="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
 
-            <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" className="inline-block h-full w-full max-w-[640px] object-cover" />
+            <img src={HobbyWarsChallenge} alt="" className="inline-block h-full w-full max-w-[640px] object-contain" />
             
             <div className="sm:max-w-sm md:max-w-md lg:max-w-lg">
                 <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9406b0e6cf62_placeholder-logo.svg" alt="" className="mb-4 inline-block" />

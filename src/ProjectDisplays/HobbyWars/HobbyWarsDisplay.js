@@ -5,19 +5,20 @@ import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG
 // import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
 // import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
 // import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
-import EquipMeRentalMonitor from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
-import EquipMeOwnerCsvUpload from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerCsvUpload/EquipMeOwnerCSVUpload.PNG'
-import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
+import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
+import HobbyWarsChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG'
+import HobbyWarsLeaderBoards from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
+import HobbyWarsUserProfile from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
 
 
 
 // Individual Display pages as to avoid having a backend / delay
-import EquipMeHomePage from "./EquipMeHomePage"
-import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
-import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
-import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
-import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
+// import EquipMeHomePage from "./EquipMeHomePage"
+// import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
+// import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
+// import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
+// import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
+import HobbyWarsCompetitionPage from "./HobbyWarsCompetition"
 
 function HobbyWarsDisplay(){
 
@@ -28,18 +29,18 @@ function HobbyWarsDisplay(){
     console.log(selectedIndex)
     const images = [
       equipmeHomeImage,
-      EquipMeStripeOnboard,
-      EquipMeOwnerCsvUpload,
-      EquipMeRentalMonitor,
-      EquipMeOwnerDashboardImage
+      HobbyWarsUserProfile,
+      HobbyWarsLeaderBoards,
+      HobbyWarsChallengesMapped,
+      HobbyWarsChallenge
     ]
 
     const projectDisplayComponents = [
-      EquipMeHomePage,
-      EquipMeMessagingDisplay,
-      EquipMeMessagingUserToOwner,
-      EquipMeMessagingOwnerToUser,
-      EquipMeOwnerDash
+      HobbyWarsCompetitionPage,
+      // EquipMeMessagingDisplay,
+      // EquipMeMessagingUserToOwner,
+      // EquipMeMessagingOwnerToUser,
+      // EquipMeOwnerDash
     ]
 
 
