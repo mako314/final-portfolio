@@ -17,9 +17,9 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
             <img src={HobbyWarsChallenge} alt="" className="object-contain" />
 
             <div onClick={() => openModal(HobbyWarsChallenge, "Hobby Wars Challenge Page")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-    <p className="text-white text-xl border p-4 rounded-md">View</p>
-</div>
-            {selectedImage.src && (
+              <p className="text-white text-xl border p-4 rounded-md">View</p>
+          </div>
+            {selectedImage?.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
                 <div className="relative rounded-lg bg-white max-w-7xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">

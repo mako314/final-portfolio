@@ -15,7 +15,7 @@ import UserProfileHobbies from '../../Assets/ProjectImages/HobbyWars/UserProfile
 
 // Individual Display pages as to avoid having a backend / delay
 import HobbyWarsCompetition from "./HobbyWarsCompetition"
-import HobbyWarsLeaderBoards from "./HobbyWarsLeaderBoards"
+import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
 import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
 function HobbyWarsDisplay(){
@@ -28,15 +28,15 @@ function HobbyWarsDisplay(){
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     console.log(selectedIndex)
-    const images = [
-      HobbyWarsChallenge,
-      HobbyWarsLeaderBoardsImage,
-      HobbyWarsUserProfileImage,
-      UserProfileChallenges,
-      UserProfileHobbies,
-      HobbyWarsChallengesMapped,
-      HobbyWarsChallenge
-    ]
+    // const images = [
+    //   HobbyWarsChallenge,
+    //   HobbyWarsLeaderBoardsImage,
+    //   HobbyWarsUserProfileImage,
+    //   UserProfileChallenges,
+    //   UserProfileHobbies,
+    //   HobbyWarsChallengesMapped,
+    //   HobbyWarsChallenge
+    // ]
 
     const projectDisplayComponents = [
       HobbyWarsCompetition,
@@ -117,7 +117,7 @@ function HobbyWarsDisplay(){
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
           goToNextPage={goToNextPage} 
-          images={images} 
+          // images={images} 
           selectedImage={selectedImage} 
           selectedIndex={selectedIndex} 
           closeModal={closeModal} 
