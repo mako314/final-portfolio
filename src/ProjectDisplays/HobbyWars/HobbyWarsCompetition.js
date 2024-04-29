@@ -16,7 +16,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
             <div className="relative group cursor-pointer"> 
             <img src={HobbyWarsChallenge} alt="" className="object-contain" />
 
-            <div onClick={() => openModal(HobbyWarsChallenge, "Hobby Wars Challenge Page")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+            <div onClick={() => openModal(HobbyWarsChallenge, "Hobby Wars Challenge Page", "Challenge Page for Hobby Wars")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
               <p className="text-white text-xl border p-4 rounded-md">View</p>
           </div>
             {selectedImage?.src && (
@@ -28,7 +28,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                     </button>
-                    <img src={selectedImage.src} alt="EquipMe home page enlarged" className="w-full h-auto mx-auto" />
+                    <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-auto mx-auto" />
                     <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 

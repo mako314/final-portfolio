@@ -12,7 +12,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                 {/* Image */}
                 <div className="w-full relative group cursor-pointer">
                 <img src={HobbyWarsUserProfileImage} alt="Hobby Wars User Profile" className="object-cover w-full h-full" />
-                    <div onClick={() => openModal(HobbyWarsUserProfileImage, "Hobby Wars User Profile")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                    <div onClick={() => openModal(HobbyWarsUserProfileImage, "Hobby Wars User Profile", "Hobby Wars User Profile")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                         <p className="text-white text-xl border p-4 rounded-md">View</p>
                     </div>
                     {selectedImage?.src && (
@@ -24,7 +24,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                     </svg>
                                 </button>
-                                <img src={selectedImage.src} alt="Hobby Wars User Profile" className="w-full h-auto mx-auto" />
+                                <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-auto mx-auto" />
                                 <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
                                     <p className="text-center">{selectedImage.infoText}</p>
                                 </div> 
@@ -55,7 +55,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
     <div className="flex">
                 <div className="w-1/2 relative group cursor-pointer">
                     <img src={UserProfileChallenges} alt="Hobby Wars User Profile Challenges" className="mt-4 object-cover w-full h-full shadow-lg" />
-                    <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                    <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges", "User Profile Challenges Displayed")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                         <p className="text-white text-xl border p-4 rounded-md">View</p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
 
         <div className="w-1/2 relative group cursor-pointer">
         <img src={UserProfileHobbies} alt="Hobby Wars User Profile" className="mt-4 mr-2 ml-2 object-fit w-full h-full shadow-lg" />
-                    <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                    <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions", "Users Hobbies and Submissions")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                         <p className="text-white text-xl border p-4 rounded-md">View</p>
                     </div>
                 </div>
