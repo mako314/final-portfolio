@@ -95,11 +95,13 @@ function ProjectCard(){
         <a href="/NotNetflix" target="_blank" rel="noreferrer" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Next.js</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask JWT</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">AWS</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Buckets</span>
             <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">OpenAI API</span>
           </div>
         </a>
 
