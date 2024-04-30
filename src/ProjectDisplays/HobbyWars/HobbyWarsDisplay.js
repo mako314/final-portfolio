@@ -75,10 +75,12 @@ function HobbyWarsDisplay(){
 
     const goToPreviousPage = useCallback(() => {
       setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+      closeModal();
   }, [projectDisplayComponents.length]);
 
   const goToNextPage = useCallback(() => {
       setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+      closeModal();
   }, [projectDisplayComponents.length]);
 
 
