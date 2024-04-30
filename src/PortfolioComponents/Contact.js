@@ -1,6 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Contact(){
+
+    const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    // This key is public btw
+    // https://www.reddit.com/r/reactjs/comments/13gifz6/comment/jk3h5vu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+    formData.append("access_key", "3aa2ea5f-b72f-47eb-a03f-ee104fce3575");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
 
     return(
         <section className="bg-white dark:bg-gray-900">
@@ -62,7 +89,7 @@ function Contact(){
                           </svg>
                     </a>
 
-                    <a href="mailto:bispo.swe@gmail.com" target="_blank">
+                    <a href="mailto:bispo.swe@gmail.com" target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-envelope-fill ml-4" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                           </svg>
@@ -74,35 +101,35 @@ function Contact(){
             </div>
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
-                <div
-                    className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray rounded-sm shadow-2xl lg:max-w-xl shadow-gray-300/50">
-                    <h1 className="text-lg font-medium text-gray-700">Connect with</h1>
+                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray rounded-sm shadow-2xl lg:max-w-xl shadow-gray-300/50">
+                <h1 className="justify-center text-lg font-medium text-gray-700 text-center">Connect with me!</h1>
 
-                    <form className="mt-6">
+                    <form onSubmit={onSubmit} className="mt-6">
                         <div className="flex-1">
                             <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                            <input type="text" placeholder="Your Name" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input type="text" name="name" placeholder="Your Name" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="flex-1 mt-6">
                             <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                            <input type="email" placeholder="Your Email" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input type="email" name="email" placeholder="Your Email" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="flex-1 mt-6">
                             <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Subject</label>
-                            <input type="subject" placeholder="Subject" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input type="text" name="subject" placeholder="Subject" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="w-full mt-6">
                             <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                            <textarea className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                            <textarea name="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 
-                        <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                        <button type="submit" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                             get in touch
                         </button>
                     </form>
+                    <span>{result}</span>
                 </div>
             </div>
         </div>

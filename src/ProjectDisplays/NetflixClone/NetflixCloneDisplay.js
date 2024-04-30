@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react"
 
 // Individual Display pages as to avoid having a backend / delay
-import HobbyWarsCompetition from "./HobbyWarsCompetition"
-import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
-import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
+// import HobbyWarsCompetition from "./HobbyWarsCompetition"
+// import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
+// import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
-function HobbyWarsDisplay(){
+function NextflixCloneDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState({
@@ -16,20 +16,11 @@ function HobbyWarsDisplay(){
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     console.log(selectedIndex)
-    // const images = [
-    //   HobbyWarsChallenge,
-    //   HobbyWarsLeaderBoardsImage,
-    //   HobbyWarsUserProfileImage,
-    //   UserProfileChallenges,
-    //   UserProfileHobbies,
-    //   HobbyWarsChallengesMapped,
-    //   HobbyWarsChallenge
-    // ]
 
     const projectDisplayComponents = [
-      HobbyWarsCompetition,
-      HobbyWarsLeaderBoards,
-      HobbyWarsUserProfile,
+      // HobbyWarsCompetition,
+      // HobbyWarsLeaderBoards,
+      // HobbyWarsUserProfile,
       // EquipMeMessagingOwnerToUser,
       // EquipMeOwnerDash
     ]
@@ -68,7 +59,7 @@ function HobbyWarsDisplay(){
     // const goToPreviousPage = () => {
     //     setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
     // }
-    
+
     //   const goToNextPage = () => {
     //     setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
     // }
@@ -108,7 +99,6 @@ function HobbyWarsDisplay(){
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
           goToNextPage={goToNextPage} 
-          // images={images} 
           selectedImage={selectedImage} 
           selectedIndex={selectedIndex} 
           closeModal={closeModal} 
@@ -120,5 +110,5 @@ function HobbyWarsDisplay(){
     )
 }
 
-export default HobbyWarsDisplay
+export default NextflixCloneDisplay;
 
