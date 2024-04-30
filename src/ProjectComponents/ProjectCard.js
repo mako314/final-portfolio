@@ -12,10 +12,16 @@ function ProjectCard(){
         <div>
         <Link to="/EquipMe" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={equipmeHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
-          <div className="absolute px-3 left-0 bottom-2 flex gap-2">
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
+          <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Stripe API</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Google API</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Chart JS</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+
+            
           </div>
         </Link>
 
@@ -32,10 +38,11 @@ function ProjectCard(){
       <div>
         <a href="/HobbyWars" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={HobbyWarsHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
-          <div className="absolute px-3 left-0 bottom-2 flex gap-2">
+          <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
             <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
             <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
+            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
           </div>
         </a>
 

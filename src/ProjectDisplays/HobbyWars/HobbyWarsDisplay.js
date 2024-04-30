@@ -1,17 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react"
-import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-
-// Images
-import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
-import HobbyWarsChallengesMapped from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallengesMapped.PNG'
-import HobbyWarsLeaderBoardsImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsLeaderBoards.PNG'
-
-import HobbyWarsUserProfileImage from '../../Assets/ProjectImages/HobbyWars/HobbyWarsUserProfile.PNG'
-import UserProfileChallenges from '../../Assets/ProjectImages/HobbyWars/UserProfileChallenges.PNG';
-import UserProfileHobbies from '../../Assets/ProjectImages/HobbyWars/UserProfileHobbies.PNG';
-
-
-
 
 // Individual Display pages as to avoid having a backend / delay
 import HobbyWarsCompetition from "./HobbyWarsCompetition"
