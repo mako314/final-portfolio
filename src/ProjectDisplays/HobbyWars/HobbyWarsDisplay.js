@@ -1,50 +1,48 @@
 import React, { useState, useEffect, useCallback } from "react"
-import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-
-// Images
-// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-// import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
-// import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
-import EquipMeRentalMonitor from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
-import EquipMeOwnerCsvUpload from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerCsvUpload/EquipMeOwnerCSVUpload.PNG'
-import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
-
-
 
 // Individual Display pages as to avoid having a backend / delay
-import EquipMeHomePage from "./EquipMeHomePage"
-import EquipMeMessagingDisplay from "./EquipMeMessagingComponents/EquipMePartOne"
-import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePartTwo"
-import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
-import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
+import HobbyWarsCompetition from "./HobbyWarsCompetition"
+import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
+import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
-function EquipMeDisplay(){
+function HobbyWarsDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [selectedImage, setSelectedImage] = useState({
+      src: null,
+      infoText: null,
+      altText: null
+    })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     console.log(selectedIndex)
-    const images = [
-      equipmeHomeImage,
-      EquipMeStripeOnboard,
-      EquipMeOwnerCsvUpload,
-      EquipMeRentalMonitor,
-      EquipMeOwnerDashboardImage
-    ]
+    // const images = [
+    //   HobbyWarsChallenge,
+    //   HobbyWarsLeaderBoardsImage,
+    //   HobbyWarsUserProfileImage,
+    //   UserProfileChallenges,
+    //   UserProfileHobbies,
+    //   HobbyWarsChallengesMapped,
+    //   HobbyWarsChallenge
+    // ]
 
     const projectDisplayComponents = [
-      EquipMeHomePage,
-      EquipMeMessagingDisplay,
-      EquipMeMessagingUserToOwner,
-      EquipMeMessagingOwnerToUser,
-      EquipMeOwnerDash
+      HobbyWarsCompetition,
+      HobbyWarsLeaderBoards,
+      HobbyWarsUserProfile,
+      // EquipMeMessagingOwnerToUser,
+      // EquipMeOwnerDash
     ]
 
 
-    const openModal = (image) => {
-        setSelectedImage(image)
+    //incorporate alt
+    const openModal = (imageSrc, imageInfoText, imageAltText) => {
+      console.log("THE IMAGE:", imageSrc)
+        setSelectedImage({
+          src: imageSrc,
+          infoText: imageInfoText,
+          alt: imageAltText
+        })
     }
 
     // Function to close the modal
@@ -108,7 +106,7 @@ function EquipMeDisplay(){
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
           goToNextPage={goToNextPage} 
-          images={images} 
+          // images={images} 
           selectedImage={selectedImage} 
           selectedIndex={selectedIndex} 
           closeModal={closeModal} 
@@ -120,5 +118,5 @@ function EquipMeDisplay(){
     )
 }
 
-export default EquipMeDisplay
+export default HobbyWarsDisplay
 
