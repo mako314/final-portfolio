@@ -53,7 +53,7 @@ function ProjectCard(){
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-            <a href="https://github.com/mako314/HobbyWars" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">HobbyWars</a>
+            <a href="https://stellular-tapioca-bfc908.netlify.app/" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">HobbyWars</a>
             <span className="text-gray-500">Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess.</span>
           </div>
 

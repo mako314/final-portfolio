@@ -13,6 +13,7 @@ import Contact from './PortfolioComponents/Contact';
 
 import EquipMeDisplay from './ProjectDisplays/EquipMe/EquipMeDisplay';
 import HobbyWarsDisplay from './ProjectDisplays/HobbyWars/HobbyWarsDisplay';
+import NextflixCloneDisplay from './ProjectDisplays/NetflixClone/NetflixCloneDisplay';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
       <Route path='/EquipMe' element={<EquipMeDisplay />} />
       <Route path='/HobbyWars' element={<HobbyWarsDisplay />} />
+      <Route path='/NotNetflix' element={<NextflixCloneDisplay />} />
       </Routes>
 
       <Footer/>
