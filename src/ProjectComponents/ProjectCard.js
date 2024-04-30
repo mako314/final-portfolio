@@ -67,7 +67,7 @@ function ProjectCard(){
         {/* https://youtu.be/ctFBd6pSzNA */}
         {/* {Adda} */}
 
-        <a href="https://youtu.be/ctFBd6pSzNA" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+        <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Next.js</span>
@@ -80,7 +80,7 @@ function ProjectCard(){
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-            <a href="https://youtu.be/ctFBd6pSzNA" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
+            <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
             <span className="text-gray-500">How my chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> This link will take you to an external site (YouTube).</span>
           </div>
 
