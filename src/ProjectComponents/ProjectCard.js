@@ -85,14 +85,14 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
             <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
-            <span className="text-gray-500">How my chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title will take you to an external site (YouTube).</span>
+            <span className="text-gray-500">How my chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
           </div>
 
         </div>
         </div>
 
         <div>
-        <a href="/NotNetflix" target="_blank" rel="noreferrer" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+        <a href="/NotNetflix" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>

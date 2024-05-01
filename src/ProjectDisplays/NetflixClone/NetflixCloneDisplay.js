@@ -5,6 +5,8 @@ import React, { useState, useEffect, useCallback } from "react"
 // import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
 // import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
+import NetflixCloneTemp from "./NetflixCloneTemp";
+
 function NextflixCloneDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -18,6 +20,7 @@ function NextflixCloneDisplay(){
     console.log(selectedIndex)
 
     const projectDisplayComponents = [
+      NetflixCloneTemp
       // HobbyWarsCompetition,
       // HobbyWarsLeaderBoards,
       // HobbyWarsUserProfile,
