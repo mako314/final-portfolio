@@ -33,9 +33,14 @@ function NetflixTemp({
             )}
 
     <div class="container px-5 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
+      <div class="flex flex-col text-center w-full mb-5">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"> Definitely Not Netflix</h1>
-        <p class="lg:w-full mx-auto leading-relaxed text-base"> Teaming up with a new connection from GrammerHub, we're building a Netflix clone. We've nailed down the app's layout (design is a work in progress) for various devices and added hover states for interactivity. Navigation between Home, Movies, TV Serie, with bookmarking planned. Show search functionality incorporates a search result page, and as a full-stack app, we're developing many more backend features. Plans for an authentication screen are in the pipeline.</p>
+        <p class="lg:w-full mx-auto leading-relaxed text-base"> Teaming up with a new connection from GrammerHub, we're building a Netflix clone. We've nailed down the app's layout (design is a work in progress) for various devices and added hover states for interactivity. Navigation between Home, Movies, TV Serie, with bookmarking planned. Show search functionality incorporates a search result page, and as a full-stack app, we're developing many more backend features. Plans for an authentication screen are in the pipeline. 
+        
+        <br/><br/>
+        
+        Click the cards to expand!
+        </p>
       </div>
       <div class="flex flex-wrap -m-4">
 
@@ -46,10 +51,10 @@ function NetflixTemp({
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TV Series Available</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Please Watch</h1>
-              <p class="leading-relaxed">Every watch helps extend our licensing deals. The goal is to work on getting this data cached.</p>
+              <p class="leading-relaxed">Every watch helps extend our licensing deals. The goal is to work on getting this data cached. Filterable too!</p>
             </div>
           </div>
-          <p class="text-center mt-2 leading-relaxed italic">NotNetflix Tv Series</p>
+          <p class="text-center mt-2 leading-relaxed italic">Not Netflix Tv Series</p>
         </div>
 
         {/* Picture Content Box 2*/}
@@ -62,7 +67,7 @@ function NetflixTemp({
               <p class="leading-relaxed">This was an amazing learning experience with AWS S3 buckets and using buckets to host media!</p>
             </div>
           </div>
-          <p class="text-center mt-2 leading-relaxed italic">NotNetflix Tv Series Display Page</p>
+          <p class="text-center mt-2 leading-relaxed italic">Not Netflix Tv Series Display Page</p>
         </div>
 
         {/* Picture Content Box 3*/}
@@ -75,21 +80,33 @@ function NetflixTemp({
               <p class="leading-relaxed">Awesome feature that tests many things, lot of flags. Capturing timestamps and using Video Embed element!</p>
             </div>
           </div>
-          <p class="text-center mt-2 leading-relaxed italic">NotNetflix Continue Watching</p>
+          <p class="text-center mt-2 leading-relaxed italic">Not Netflix Continue Watching</p>
         </div>
 
-        {/* Picture Content Box 4*/}
+        
         <div className="flex justify-center"> 
+
+        {/* Left arrow */}
+        <button
+        onClick={goToPreviousPage}
+        aria-label="Previous"
+        className='mr-5'
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+          <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+      </button>
+      {/* Picture Content Box 4*/}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
-            <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-cover object-center" src={NotNetflixInteractiveHover}/>
+            <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixInteractiveHover}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Interactive Hover States</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Enjoy House Season 1 trailers.</h1>
               <p class="leading-relaxed"> Took advantage of Youtube embeds, mute enabled by default to save users experience!</p>
             </div>
           </div>
-          <p class="text-center mt-2 leading-relaxed italic">NotNetflix Interactive Hover</p>
+          <p class="text-center mt-2 leading-relaxed italic">Not Netflix Interactive Hover</p>
         </div>
 
         {/* Picture Content Box 5*/}
@@ -102,8 +119,20 @@ function NetflixTemp({
               <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
             </div>
           </div>
-          <p class="text-center mt-2 leading-relaxed italic">NotNetflix Watch your Favorites!</p>
+          <p class="text-center mt-2 leading-relaxed italic">Not Netflix Watch your Favorites!</p>
         </div>
+
+                        {/* Right arrow */}
+                        <button
+                  onClick={goToNextPage}
+                  aria-label="Next"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </button>
+
+
         </div>
 
       </div>

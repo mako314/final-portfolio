@@ -39,7 +39,6 @@ function HobbyWarsLeaderBoards({
         </div>
       </div>
       <div className="flex justify-center items-center mt-8 py-5">
-        {/* Navigation buttons omitted for brevity */}
          {/* Left arrow */}
          <button
                   onClick={goToPreviousPage}

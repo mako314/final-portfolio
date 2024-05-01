@@ -21,12 +21,8 @@ function NextflixCloneDisplay(){
     console.log(selectedIndex)
 
     const projectDisplayComponents = [
+      NetflixMovieCollections,
       NetflixTemp
-      // HobbyWarsCompetition,
-      // HobbyWarsLeaderBoards,
-      // HobbyWarsUserProfile,
-      // EquipMeMessagingOwnerToUser,
-      // EquipMeOwnerDash
     ]
 
 
