@@ -15,7 +15,7 @@ function HobbyWarsLeaderBoards({
           <div className="w-full group cursor-pointer"> {/* Parent container for image and overlay */}
             <div className="relative shadow-lg"> {/* This div becomes the relative container */}
               <img alt="Leaderboard display" className="object-cover object-center w-full h-auto" src={HobbyWarsLeaderBoardsImage} />
-              <div onClick={() => openModal(HobbyWarsLeaderBoardsImage, "Hobby Wars Leaderboards Page")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+              <div onClick={() => openModal(HobbyWarsLeaderBoardsImage, "Hobby Wars Leaderboards Page", "Hobby Wars Leader Boards")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                 <p className="text-white text-xl border p-4 rounded-md">View</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ function HobbyWarsLeaderBoards({
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                     </button>
-                    <img src={selectedImage.src} alt="Hobby Wars Leader Boards" className="w-full h-auto mx-auto" />
+                    <img src={selectedImage.src} alt={selectedImage.altText} className="w-full h-auto mx-auto" />
                     <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
@@ -39,7 +39,6 @@ function HobbyWarsLeaderBoards({
         </div>
       </div>
       <div className="flex justify-center items-center mt-8 py-5">
-        {/* Navigation buttons omitted for brevity */}
          {/* Left arrow */}
          <button
                   onClick={goToPreviousPage}
