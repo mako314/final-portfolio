@@ -1,7 +1,7 @@
 import React from "react";
 import NotNetflixMovies from "../../Assets/ProjectImages/NetflixClone/NotNetflixMovies.PNG";
 
-function NetflixCloneTemp() {
+function NetflixMovieCollections() {
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container">
@@ -28,4 +28,4 @@ function NetflixCloneTemp() {
   );
 }
 
-export default NetflixCloneTemp;
+export default NetflixMovieCollections;

@@ -85,7 +85,7 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
             <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
-            <span className="text-gray-500">How my chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
+            <span className="text-gray-500">Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
           </div>
 
         </div>

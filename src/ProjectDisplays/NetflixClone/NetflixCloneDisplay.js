@@ -5,7 +5,8 @@ import React, { useState, useEffect, useCallback } from "react"
 // import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
 // import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 
-import NetflixCloneTemp from "./NetflixCloneTemp";
+import NetflixMovieCollections from "./NetflixMovieCollections";
+import NetflixTemp from "./NetflixTemp";
 
 function NextflixCloneDisplay(){
 
@@ -20,7 +21,7 @@ function NextflixCloneDisplay(){
     console.log(selectedIndex)
 
     const projectDisplayComponents = [
-      NetflixCloneTemp
+      NetflixTemp
       // HobbyWarsCompetition,
       // HobbyWarsLeaderBoards,
       // HobbyWarsUserProfile,
