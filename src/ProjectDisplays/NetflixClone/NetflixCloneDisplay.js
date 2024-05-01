@@ -31,11 +31,10 @@ function NextflixCloneDisplay(){
 
 
     //incorporate alt
-    const openModal = (imageSrc, imageInfoText, imageAltText) => {
+    const openModal = (imageSrc, imageAltText) => {
       console.log("THE IMAGE:", imageSrc)
         setSelectedImage({
           src: imageSrc,
-          infoText: imageInfoText,
           alt: imageAltText
         })
     }
