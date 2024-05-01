@@ -41,7 +41,7 @@ function NetflixTemp({
 
         {/* Picture Content Box */}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixSeries, "Tv Series Mapped Not Netflix")}>
+          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixSeries,"Your Favorite Series Mapped", "Tv Series Mapped Not Netflix")}>
             <img alt="Tv Series Mapped Not Netflix" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixSeries}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TV Series Available</h2>
@@ -54,8 +54,8 @@ function NetflixTemp({
 
         {/* Picture Content Box 2*/}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixView}/>
+          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixView, "Display page for TV Series", "Not Netflix Tv Series Display Page")}>
+            <img alt="Not Netflix Tv Series Display Page" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixView}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Tv Series Display Page</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Big Arthur Fans</h1>
@@ -67,8 +67,8 @@ function NetflixTemp({
 
         {/* Picture Content Box 3*/}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixContWatching}/>
+          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixContWatching,"Keep watching after stepping away!", "Not Netflix Continue Watching")}>
+            <img alt="Not Netflix Continue Watching" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixContWatching}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Continue Where you Left Off! </h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">If we finished user login that is</h1>
@@ -81,8 +81,8 @@ function NetflixTemp({
         {/* Picture Content Box 4*/}
         <div className="flex justify-center"> 
         <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={NotNetflixInteractiveHover}/>
+          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
+            <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-cover object-center" src={NotNetflixInteractiveHover}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Interactive Hover States</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Enjoy House Season 1 trailers.</h1>
@@ -94,8 +94,8 @@ function NetflixTemp({
 
         {/* Picture Content Box 5*/}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
+          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixWatchingArthur,"Enjoy season 1 of Arthur! Please don't sue me this was practice. I'll react like the image above.", "Not Netflix Watching Arthur")}>
+            <img alt="Not Netflix Watching Arthur" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Yes one can actually watch Arthur!</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All of Season 1 available</h1>
