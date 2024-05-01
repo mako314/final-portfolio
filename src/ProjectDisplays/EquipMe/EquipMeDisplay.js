@@ -22,7 +22,11 @@ import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 function EquipMeDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [selectedImage, setSelectedImage] = useState({
+      src: null,
+      infoText: null,
+      altText: null
+    })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     console.log(selectedIndex)
@@ -43,8 +47,13 @@ function EquipMeDisplay(){
     ]
 
 
-    const openModal = (image) => {
-        setSelectedImage(image)
+    const openModal = (imageSrc, imageInfoText, imageAltText) => {
+      console.log("THE IMAGE:", imageSrc)
+        setSelectedImage({
+          src: imageSrc,
+          infoText: imageInfoText,
+          alt: imageAltText
+        })
     }
 
     // Function to close the modal
@@ -77,10 +86,12 @@ function EquipMeDisplay(){
 
     const goToPreviousPage = useCallback(() => {
       setSelectedIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projectDisplayComponents.length - 1));
+      closeModal();
   }, [projectDisplayComponents.length]);
 
   const goToNextPage = useCallback(() => {
       setSelectedIndex((prevIndex) => (prevIndex + 1) % projectDisplayComponents.length);
+      closeModal();
   }, [projectDisplayComponents.length]);
 
 

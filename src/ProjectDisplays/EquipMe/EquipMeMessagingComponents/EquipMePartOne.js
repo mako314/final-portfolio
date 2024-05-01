@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-// import EquipMeMessaging from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaing/EquipMeInternalMessagingSystem.PNG'
-// import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeInternalMessagingSystem.PNG'
-
-import EquipMeMessagingImage from '../../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG';
-
 import EquipMeStripeOnboard from '../../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
 
 function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
@@ -25,12 +20,12 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
       
       <img alt="Equip Me Messaging System" src={EquipMeStripeOnboard} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
 
-      <div onClick={openModal} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
+      <div onClick={() => openModal(EquipMeStripeOnboard, "Equip Me Messaging System", "Equip Me Messaging System")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md"> View </p>
       </div>
       </div>
 
-      {selectedImage && (
+      {selectedImage?.src  && (
         <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
           <div className="relative rounded-lg bg-white max-w-7xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
             <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
