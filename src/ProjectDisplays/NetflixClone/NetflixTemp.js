@@ -3,6 +3,7 @@ import NotNetflixSeries from "../../Assets/ProjectImages/NetflixClone/NotNetflix
 import NotNetflixView from "../../Assets/ProjectImages/NetflixClone/NotNetflixTvView.PNG";
 import NotNetflixContWatching from "../../Assets/ProjectImages/NetflixClone/NotNetflxTvContinueWatchingArthur.PNG";
 import NotNetflixInteractiveHover from "../../Assets/ProjectImages/NetflixClone/NotNetflxTvMapped.PNG";
+import NotNetflixWatchingArthur from "../../Assets/ProjectImages/NetflixClone/NotNetflxTvWatchingArthur.PNG";
 
 
 
@@ -56,7 +57,7 @@ function NetflixTemp() {
           <p class="text-center mt-2 leading-relaxed">NotNetflix Continue Watching</p>
         </div>
 
-        
+        <div className="flex justify-center"> 
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={NotNetflixInteractiveHover}/>
@@ -72,27 +73,16 @@ function NetflixTemp() {
 
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365"/>
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Yes one can actually watch Arthur!</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All of Season 1 available</h1>
+              <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
             </div>
           </div>
+          <p class="text-center mt-2 leading-relaxed">NotNetflix Watch your Favorites!</p>
         </div>
-
-
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366"/>
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
         </div>
-
 
       </div>
     </div>
