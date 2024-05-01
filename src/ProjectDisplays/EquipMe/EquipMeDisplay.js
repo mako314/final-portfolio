@@ -29,15 +29,6 @@ function EquipMeDisplay(){
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
-    console.log(selectedIndex)
-    const images = [
-      equipmeHomeImage,
-      EquipMeStripeOnboard,
-      EquipMeOwnerCsvUpload,
-      EquipMeRentalMonitor,
-      EquipMeOwnerDashboardImage
-    ]
-
     const projectDisplayComponents = [
       EquipMeHomePage,
       EquipMeMessagingDisplay,
@@ -119,7 +110,6 @@ function EquipMeDisplay(){
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
           goToNextPage={goToNextPage} 
-          images={images} 
           selectedImage={selectedImage} 
           selectedIndex={selectedIndex} 
           closeModal={closeModal} 
