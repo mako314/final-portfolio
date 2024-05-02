@@ -23,9 +23,9 @@ function EquipMeDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState({
-      src: null,
-      infoText: null,
-      altText: null
+      'src': null,
+      'infoText': null,
+      'altText': null
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -41,9 +41,9 @@ function EquipMeDisplay(){
     const openModal = (imageSrc, imageInfoText, imageAltText) => {
       console.log("THE IMAGE:", imageSrc)
         setSelectedImage({
-          src: imageSrc,
-          infoText: imageInfoText,
-          alt: imageAltText
+          'src': imageSrc,
+          'infoText': imageInfoText,
+          'alt': imageAltText
         })
     }
 
