@@ -30,7 +30,7 @@ function Contact(){
 
 
     return(
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-[#FAFAFA] dark:bg-gray-900">
     <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
@@ -104,7 +104,7 @@ function Contact(){
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
                 <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray rounded-sm shadow-2xl lg:max-w-xl shadow-gray-300/50">
-                <h1 className="justify-center text-lg font-medium text-gray-700 text-center">Connect with me!</h1>
+                <h1 className="text-lg font-medium text-center text-[#34568B]">Connect with me!</h1>
 
                     <form onSubmit={onSubmit} className="mt-6">
                         <div className="flex-1">
@@ -127,7 +127,7 @@ function Contact(){
                             <textarea name="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 
-                        <button type="submit" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                        <button type="submit" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#88BDBC]  rounded-md hover:bg-[#76a9a3] focus:outline-none focus:ring focus:bg-[#76a9a3] focus:ring-opacity-50">
                             get in touch
                         </button>
                     </form>
