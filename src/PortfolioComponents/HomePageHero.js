@@ -14,7 +14,7 @@ function HomePageHero() {
                             <span className="text-[#88BDBC]">A Full Stack Developer</span>  {/* Soft Seafoam Green for highlight */}
                         </h1>
                         
-                        <p className="mt-3 text-[#967BB6] dark:text-[#CDDC8C]">  {/* Dusty Lavender and Muted Olive Yellow for dark mode */}
+                        <p className="mt-3 text-gray-600 dark:text-white">  {/* Dusty Lavender and Muted Olive Yellow for dark mode */}
                             Passionate about tech, currently immersed in projects utilizing Next.js, PostgreSQL, AWS, Tailwind, TypeScript, and various APIs.
                         </p>
 
