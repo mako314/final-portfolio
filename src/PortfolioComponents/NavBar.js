@@ -76,8 +76,7 @@ function Navbar(){
                 <Link to="/projects"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-  
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#A7C7E7] focus:text-[#A7C7E7] focus:outline-none focus-visible:outline-none lg:px-8"  
                   >
                     Projects
                 </Link>
@@ -87,7 +86,7 @@ function Navbar(){
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#A7C7E7] focus:text-[#A7C7E7] focus:outline-none focus-visible:outline-none lg:px-8"  
   
                   >
                     About Me
@@ -97,7 +96,7 @@ function Navbar(){
                   <Link to="/contact"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#A7C7E7] focus:text-[#A7C7E7] focus:outline-none focus-visible:outline-none lg:px-8"  
   
                   >
                     Contact
