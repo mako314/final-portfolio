@@ -19,14 +19,14 @@ function ProjectCard(){
         <Link to="/EquipMe" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={equipmeHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask JWT</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Stripe API</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Google API</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Chart JS</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask JWT</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Stripe API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Google API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Chart JS</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
 
             
           </div>
@@ -46,10 +46,10 @@ function ProjectCard(){
         <a href="/HobbyWars" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={HobbyWarsHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
         </a>
 
@@ -74,11 +74,11 @@ function ProjectCard(){
         <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Next.js</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">OpenAI API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">OpenAI API</span>
           </div>
         </a>
 
@@ -95,12 +95,12 @@ function ProjectCard(){
         <a href="/NotNetflix" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask JWT</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">AWS S3 buckets</span>
-            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask JWT</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">AWS S3 buckets</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
         </a>
 
