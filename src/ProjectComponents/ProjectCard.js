@@ -19,14 +19,14 @@ function ProjectCard(){
         <Link to="/EquipMe" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={equipmeHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask JWT</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Stripe API</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Google API</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Chart JS</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask JWT</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Stripe API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Google API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Chart JS</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
 
             
           </div>
@@ -34,8 +34,8 @@ function ProjectCard(){
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-            <a href="https://www.equipme.live" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">EquipMe</a>
-            <span className="text-gray-500">Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. <br/> <br/> Clicking the title will take you to an external site (EquipMe - Hosted on Netlify).</span>
+            <a href="https://www.equipme.live" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">EquipMe</a>
+            <span className="text-gray-500 text-sm">Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. <br/> <br/> Clicking the title will take you to an external site (EquipMe - Hosted on Netlify).</span>
           </div>
 
         </div>
@@ -46,18 +46,18 @@ function ProjectCard(){
         <a href="/HobbyWars" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={HobbyWarsHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
         </a>
 
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-            <a href="https://stellular-tapioca-bfc908.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">HobbyWars</a>
-            <span className="text-gray-500">Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. <br/> <br/> Clicking the title will take you to an external site (HobbyWars - Hosted on Netlify).</span>
+            <a href="https://stellular-tapioca-bfc908.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">HobbyWars</a>
+            <span className="text-gray-500 text-sm">Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. <br/> <br/> Clicking the title will take you to an external site (HobbyWars - Hosted on Netlify).</span>
           </div>
 
         </div>
@@ -74,18 +74,18 @@ function ProjectCard(){
         <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Next.js</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">OpenAI API</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">OpenAI API</span>
           </div>
         </a>
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-            <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
-            <span className="text-gray-500">Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
+            <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
+            <span className="text-gray-500 text-sm">Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
           </div>
 
         </div>
@@ -95,19 +95,19 @@ function ProjectCard(){
         <a href="/NotNetflix" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">React</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Python</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">Flask JWT</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">AWS S3 buckets</span>
-            <span className="rounded-lg bg-white px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-gray-800">SQLAlchemy</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask JWT</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">AWS S3 buckets</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
         </a>
 
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
-          <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Definitely Not Netflix</a>
-            <span className="text-gray-500">A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site. <br/> <br/> Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
+          <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">Definitely Not Netflix</a>
+            <span className="text-gray-500 text-sm">A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site. <br/> <br/> Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
           </div>
 
         </div>

@@ -9,9 +9,7 @@ function ProjectCollection() {
                     <h2 className="mb-4 text-center text-2xl font-bold text-[#34568B] md:mb-6 lg:text-3xl"> {/* Deep Twilight Blue for headers */}
                         Project Portfolio
                     </h2>
-                    <p className="mx-auto max-w-screen-md text-center text-[#967BB6] md:text-lg"> {/* Dusty Lavender for text */}
-                        A Glimpse into some of the projects I've tackled
-                    </p>
+                    <p className="mx-auto max-w-screen-md text-center text-gray-600 md:text-lg">A Glimpse into some of the projects I've tackled</p>
                 </div>
                 <div className="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
                     <ProjectCard/>
