@@ -1,11 +1,13 @@
 import React from "react";
+import HeroImage from "../Assets/PortfolioImages/HeroImage.png"
+
 
 function HomePageHero() {
     return (
         <div className="container px-6 py-16 mx-auto">
             <div className="flex flex-col lg:flex-row items-center">
                 <div className="w-full lg:w-1/2">
-                    <img className="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Catalogue-pana.svg"/>
+                    <img className="w-full h-full lg:max-w-3xl" src={HeroImage} alt="Catalogue-pana.svg"/>
                 </div>
                 <div className="w-full lg:w-1/2 lg:pl-6">
                     <div className="lg:max-w-lg">
