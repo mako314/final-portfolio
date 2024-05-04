@@ -28,7 +28,7 @@ function Navbar(){
                 className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               >
                 <Link to="/"> 
-                <img src={MyLogo} alt="Macolister Logo" className="h-16 w-full" />
+                <img src={MyLogo} alt="Macolister Logo" className="h-12 w-full" />
                 </Link>
               </div>
 
@@ -71,8 +71,24 @@ function Navbar(){
                     : "invisible opacity-0"
                 }`}
               >
-                <li role="none" className="flex items-stretch">
-                   
+
+                  <li role="none" className="flex items-stretch">
+
+                  {/* https://docs.google.com/document/d/e/2PACX-1vTg3XLzEu8JYKwUNm7p3IhsWToOPtHLG_XRbcB5RF90_7wKw3wW2Tla8vWK0H1GfQ/pub */}
+                    
+                  <a href='https://docs.google.com/document/d/e/2PACX-1vTg3XLzEu8JYKwUNm7p3IhsWToOPtHLG_XRbcB5RF90_7wKw3wW2Tla8vWK0H1GfQ/pub'
+                      target="_blank" 
+                      rel="noreferrer"
+                      role="menuitem"
+                      aria-haspopup="false"
+                      className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    >
+                      Resume
+                  </a>
+                  </li>
+
+
+                <li role="none" className="flex items-stretch">                   
                 <Link to="/projects"
                     role="menuitem"
                     aria-haspopup="false"
@@ -81,6 +97,7 @@ function Navbar(){
                     Projects
                 </Link>
                 </li>
+
                 <li role="none" className="flex items-stretch">
                   <Link to='/about_me'
                     role="menuitem"
