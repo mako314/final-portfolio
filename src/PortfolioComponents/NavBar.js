@@ -1,12 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState,useContext } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 import MyLogo from '../Assets/PortfolioImages/makoLogo.png'
+import { ThemeContext } from './ThemeContext';
+
 
 
 function Navbar(){
 
     const [isToggleOpen, setIsToggleOpen] = useState(false)
     const navigate = useNavigate();
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    console.log("THE THEME:", theme)
 
     return (
     <>
@@ -121,9 +126,9 @@ function Navbar(){
                 </li>
               </ul>
               {/*      <!-- Actions --> */}
-              <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 cursor-pointer">
+              <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 cursor-pointer" onClick={toggleTheme}>
                 {/* Change this Cart Icon to something cute*/}
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
                 </svg>

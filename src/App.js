@@ -15,7 +15,7 @@ import EquipMeDisplay from './ProjectDisplays/EquipMe/EquipMeDisplay';
 import HobbyWarsDisplay from './ProjectDisplays/HobbyWars/HobbyWarsDisplay';
 import NextflixCloneDisplay from './ProjectDisplays/NetflixClone/NetflixCloneDisplay';
 
-import { ThemeProvider } from './PortfolioComponents/DarkModeContext';
+import { ThemeProvider } from './PortfolioComponents/ThemeContext';
 
 function App() {
   return (
