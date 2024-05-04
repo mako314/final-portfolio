@@ -39,7 +39,7 @@ function ProjectCard(){
             <br/> <br/> 
             *** Clicking the title will take you to an external site: EquipMe - Hosted on Netlify.</span>
             <br/><br/> 
-            <a href="https://github.com/mako314/EquipMe" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800">Github</a>
+            <a href="https://github.com/mako314/EquipMe" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
           </div>
 
         </div>
@@ -66,7 +66,7 @@ function ProjectCard(){
             <br/><br/> 
             *** Clicking the title will take you to an external site: HobbyWars - Hosted on Netlify.
             <br/><br/> 
-            <a href="https://github.com/mako314/HobbyWars" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800">Github</a>
+            <a href="https://github.com/mako314/HobbyWars" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
             </span>
           </div>
 
@@ -99,7 +99,7 @@ function ProjectCard(){
             <br/><br/> 
             *** Clicking the title OR card will take you to an external site: YouTube.
             <br/><br/> 
-            <a href="https://github.com/jsoto007/learn-link" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800">Github</a>
+            <a href="https://github.com/jsoto007/learn-link" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
             </span>
           </div>
 
@@ -125,7 +125,7 @@ function ProjectCard(){
             <span className="text-gray-500 text-sm">A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
              <br/> <br/> *** Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
              <br/><br/> 
-          <a href="https://github.com/mako314/netflix-final" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800">Github</a>
+          <a href="https://github.com/mako314/netflix-final" target="_blank" rel="noreferrer" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
 
           </div>
 
