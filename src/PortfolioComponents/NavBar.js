@@ -28,7 +28,7 @@ function Navbar(){
                 className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               >
                 <Link to="/"> 
-                <img src={MyLogo} alt="Macolister Logo" className="h-12 w-full" />
+                <img src={MyLogo} alt="Macolister Logo" className="h-16 w-full" />
                 </Link>
               </div>
 
@@ -76,7 +76,7 @@ function Navbar(){
                 <Link to="/projects"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
                   >
                     Projects
                 </Link>
@@ -86,7 +86,7 @@ function Navbar(){
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
   
                   >
                     About Me
@@ -96,7 +96,7 @@ function Navbar(){
                   <Link to="/contact"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
   
                   >
                     Contact

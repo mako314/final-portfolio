@@ -35,7 +35,7 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
             <a href="https://www.equipme.live" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">EquipMe</a>
-            <span className="text-gray-500">Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. <br/> <br/> Clicking the title will take you to an external site (EquipMe - Hosted on Netlify).</span>
+            <span className="text-gray-500 text-sm">Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. <br/> <br/> Clicking the title will take you to an external site (EquipMe - Hosted on Netlify).</span>
           </div>
 
         </div>
@@ -57,7 +57,7 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
             <a href="https://stellular-tapioca-bfc908.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">HobbyWars</a>
-            <span className="text-gray-500">Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. <br/> <br/> Clicking the title will take you to an external site (HobbyWars - Hosted on Netlify).</span>
+            <span className="text-gray-500 text-sm">Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. <br/> <br/> Clicking the title will take you to an external site (HobbyWars - Hosted on Netlify).</span>
           </div>
 
         </div>
@@ -85,7 +85,7 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
             <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">Adda</a>
-            <span className="text-gray-500">Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
+            <span className="text-gray-500 text-sm">Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. <br/> <br/> Clicking the title OR card will take you to an external site (YouTube).</span>
           </div>
 
         </div>
@@ -107,7 +107,7 @@ function ProjectCard(){
         <div className="flex items-start justify-between gap-2 px-2">
           <div className="flex flex-col">
           <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className="text-lg font-bold text-[#34568B] transition duration-100 hover:text-gray-500 lg:text-xl">Definitely Not Netflix</a>
-            <span className="text-gray-500">A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site. <br/> <br/> Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
+            <span className="text-gray-500 text-sm">A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site. <br/> <br/> Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
           </div>
 
         </div>

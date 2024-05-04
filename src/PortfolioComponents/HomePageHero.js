@@ -10,7 +10,9 @@ function HomePageHero() {
                 <div className="w-full lg:w-1/2 lg:pl-6">
                     <div className="lg:max-w-lg">
                         <h1 className="text-3xl font-semibold text-[#34568B] dark:text-white lg:text-4xl">  {/* Deep Twilight Blue for light mode, white for dark mode */}
-                            Hello! My name is Macolister Bispo <br />
+                           Hello!
+                            <br/>
+                            My name is Macolister Bispo <br />
                             <span className="text-[#88BDBC]">A Full Stack Developer</span>  {/* Soft Seafoam Green for highlight */}
                         </h1>
                         
