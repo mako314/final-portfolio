@@ -26,7 +26,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Equip Me Owner Rental Monitor" src={EquipMeRentalMonitor} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Equip Me Owner Rental Monitor" src={EquipMeRentalMonitor} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill rounded-xl lg:max-w-2xl" />
       
       <div onClick={() => openModal(EquipMeRentalMonitor, "EquipMe Owner Rental Tracking", "Equip Me Owner Rental Monitor")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View    </p>

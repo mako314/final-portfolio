@@ -23,7 +23,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
       
-      <img alt="Stripe Onboarding for Owners" src={EquipMeStripeOnboard} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl" />
+      <img alt="Stripe Onboarding for Owners" src={EquipMeStripeOnboard} className="inline-block h-full max-h-[428px] w-full max-w-md object-fill lg:max-w-2xl rounded-xl" />
 
       <div onClick={() => openModal(EquipMeStripeOnboard, "Stripe Onboarding for Owners", "Stripe Onboarding for Owners")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md"> View </p>

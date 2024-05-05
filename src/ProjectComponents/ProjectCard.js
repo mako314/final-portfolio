@@ -112,6 +112,7 @@ function ProjectCard(){
         </div>
 
         <div>
+        {/* I think href is resetting state, might move to make only href the youtube link one */}
         <a href="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
@@ -126,6 +127,7 @@ function ProjectCard(){
 
         <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
+          
           <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>Definitely Not Netflix</a>
             <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} text-sm`}>A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
              <br/> <br/> *** Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
