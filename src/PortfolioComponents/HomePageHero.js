@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import HeroImage from "../Assets/PortfolioImages/HeroImage.png"
 import { ThemeContext } from './ThemeContext';
+import { Link} from 'react-router-dom';
+
 
 
 function HomePageHero() {
@@ -26,11 +28,11 @@ function HomePageHero() {
                         Passionate about tech, currently immersed in projects utilizing Next.js, PostgreSQL, AWS, Tailwind, TypeScript, and various APIs.
                     </p>
 
-                    <a href="/contact" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} hover:text-[#A7C7E7] transition duration-100 lg:text-xl`}>
+                    <Link href="/contact" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} hover:text-[#A7C7E7] transition duration-100 lg:text-xl`}>
                         <button className={`w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform ${theme === 'dark' ? 'bg-gray-700 hover:bg-gray-600' : 'bg-[#88BDBC] hover:bg-[#76a9a3]'} rounded-lg lg:w-auto`}>
                         Get in touch
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

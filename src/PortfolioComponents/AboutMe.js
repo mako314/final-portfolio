@@ -6,7 +6,7 @@ import profilePhoto from '../Assets/ProjectImages/Me/IMG_4635.jpg'
 function AboutMe(){
     const { theme, toggleTheme } = useContext(ThemeContext);
     return(
-        <section className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-900`}>
+        <section className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800`}>
             <div className="max-w-6xl px-6 py-10 mx-auto">
                 <div className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
                     <div className="absolute w-full bg-[#88BDBC] -z-10 md:h-96 rounded-2xl"></div>

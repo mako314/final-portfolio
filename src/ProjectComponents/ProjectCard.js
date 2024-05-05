@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 //EquipMe Photos
 import equipmeHome from '../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
@@ -52,7 +52,7 @@ function ProjectCard(){
 
       {/* PORTFOLIO SITE 2 */}
       <div>
-        <a href="/HobbyWars" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/HobbyWars" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={HobbyWarsHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -60,7 +60,7 @@ function ProjectCard(){
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
-        </a>
+        </Link>
 
 
         <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
@@ -96,7 +96,6 @@ function ProjectCard(){
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">OpenAI API</span>
           </div>
         </a>
-
         <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
             <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>Adda</a>
@@ -111,9 +110,10 @@ function ProjectCard(){
         </div>
         </div>
 
+      {/* PORTFOLIO SITE 4 */}
         <div>
         {/* I think href is resetting state, might move to make only href the youtube link one */}
-        <a href="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -123,7 +123,7 @@ function ProjectCard(){
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">AWS S3 buckets</span>
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
-        </a>
+        </Link>
 
         <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
