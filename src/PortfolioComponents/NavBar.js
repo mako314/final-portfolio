@@ -16,7 +16,7 @@ function Navbar(){
     return (
     <>
         {/*<!-- Header --> */}
-        <header className="border-b-1 relative z-30 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
+        <header className={`border-b-1 relative z-30 w-full border-b border-slate-200 bg-${theme === 'dark' ? 'gray-800' : 'white/90'} shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden`}>
           <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
             <nav
               aria-label="main navigation"
@@ -85,7 +85,7 @@ function Navbar(){
                       rel="noreferrer"
                       role="menuitem"
                       aria-haspopup="false"
-                      className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                      className={`flex items-center gap-2 py-4 transition-colors duration-300 text-${theme === 'dark' ? 'white' : '[#34568B]'} hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8`}  
                     >
                       Resume
                   </a>
@@ -96,7 +96,7 @@ function Navbar(){
                 <Link to="/projects"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className={`flex items-center gap-2 py-4 transition-colors duration-300 text-${theme === 'dark' ? 'white' : '[#34568B]'} hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8`}  
                   >
                     Projects
                 </Link>
@@ -107,7 +107,7 @@ function Navbar(){
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className={`flex items-center gap-2 py-4 transition-colors duration-300 text-${theme === 'dark' ? 'white' : '[#34568B]'} hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8`}  
   
                   >
                     About Me
@@ -117,7 +117,7 @@ function Navbar(){
                   <Link to="/contact"
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 text-[#34568B] hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8"  
+                    className={`flex items-center gap-2 py-4 transition-colors duration-300 text-${theme === 'dark' ? 'white' : '[#34568B]'} hover:text-[#88BDBC] focus:text-[#88BDBC] focus:outline-none focus-visible:outline-none lg:px-8`}  
   
                   >
                     Contact
