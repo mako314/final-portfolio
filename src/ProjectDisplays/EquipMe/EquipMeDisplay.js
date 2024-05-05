@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect, useCallback, useContext } from "react"
 import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 
 // Images
@@ -19,6 +19,9 @@ import EquipMeMessagingUserToOwner from "./EquipMeMessagingComponents/EquipMePar
 import EquipMeMessagingOwnerToUser from "./EquipMeMessagingComponents/EquipMePartThree"
 import EquipMeOwnerDash from "./EquipMeOwnerDashBoards"
 
+import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
+
+
 function EquipMeDisplay(){
 
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -28,6 +31,7 @@ function EquipMeDisplay(){
       'altText': null
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     const projectDisplayComponents = [
       EquipMeHomePage,
@@ -105,7 +109,7 @@ function EquipMeDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className="bg-gray-50 mx-auto max-w-7xl px-5 py-16 md:px-10">
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} mx-auto max-w-full px-5 py-16 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 

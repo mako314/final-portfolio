@@ -1,8 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
+import { ThemeContext } from './ThemeContext';
 
 function Contact(){
 
     const [result, setResult] = useState("");
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,11 +33,12 @@ function Contact(){
 
 
     return(
-        <section className="bg-[#FAFAFA] dark:bg-gray-900">
+        // 
+        <section className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-900`}>
     <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
-                <h1 className="text-2xl font-semibold text-[#34568B] capitalize dark:text-white lg:text-3xl">
+                <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} capitalize dark:text-white lg:text-3xl`}>
                     Get in touch!
                 </h1>
 
@@ -45,7 +49,7 @@ function Contact(){
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
 
-                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                        <span className={`mx-2 ${theme === 'dark' ? 'text-white' : 'text-gray-700'} truncate w-72 dark:text-gray-400`}>
                             Port Saint Lucie, Florida
                         </span>
                     </p>
@@ -55,7 +59,7 @@ function Contact(){
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
 
-                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">(772) 607-3239</span>
+                        <span className={`mx-2 ${theme === 'dark' ? 'text-white' : 'text-gray-700'} truncate w-72 dark:text-gray-400`}>(772) 607-3239</span>
                     </p>
 
                     <p className="flex items-start -mx-2">
@@ -63,16 +67,16 @@ function Contact(){
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
 
-                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bispo.swe@gmail.com</span>
+                        <span className={`mx-2 ${theme === 'dark' ? 'text-white' : 'text-gray-700'} truncate w-72 dark:text-gray-400`}>bispo.swe@gmail.com</span>
                     </p>
                 </div>
 
                 <div className="mt-6 w-80 md:mt-8">
-                    <h3 className="text-gray-600 dark:text-gray-300 ">Or feel free to reach me below</h3>
+                    <h3 className={`${theme === 'dark' ? 'text-white' : 'text-gray-700'} dark:text-gray-300 `}>Or feel free to reach me below</h3>
 
                     <div className="flex mt-4 -mx-1.5 ">
                     <a href="https://github.com/mako314" target="_blank" rel="noreferrer" aria-label="Github" title="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#181717" className="bi bi-github ml-2" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={`${theme === 'dark' ? 'white' : '#181717'} `} className="bi bi-github ml-2" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                           </svg>
                     </a>
@@ -108,22 +112,23 @@ function Contact(){
 
                     <form onSubmit={onSubmit} className="mt-6">
                         <div className="flex-1">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
+                        
+                            <label className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'} dark:text-gray-200`}>Full Name</label>
                             <input type="text" name="name" placeholder="Your Name" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="flex-1 mt-6">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+                            <label className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'} dark:text-gray-200`}>Email address</label>
                             <input type="email" name="email" placeholder="Your Email" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="flex-1 mt-6">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Subject</label>
+                            <label className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'} dark:text-gray-200`}>Subject</label>
                             <input type="text" name="subject" placeholder="Subject" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="w-full mt-6">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                            <label className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'} dark:text-gray-200`}>Message</label>
                             <textarea name="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 

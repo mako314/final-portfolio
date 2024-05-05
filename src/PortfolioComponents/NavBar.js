@@ -1,17 +1,20 @@
-import React, {useState} from 'react';
+import React, { useState,useContext } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
-import MyLogo from '../Assets/PortfolioImages/makoLogo.png'
+// import { ReactComponent as MyLogo } from '../Assets/PortfolioImages/macolister-icon-only.svg';
+import { ThemeContext } from './ThemeContext';
+
 
 
 function Navbar(){
 
     const [isToggleOpen, setIsToggleOpen] = useState(false)
     const navigate = useNavigate();
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    console.log("THE THEME:", theme)
 
     return (
     <>
-
-  
         {/*<!-- Header --> */}
         <header className="border-b-1 relative z-30 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
           <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
@@ -28,7 +31,8 @@ function Navbar(){
                 className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               >
                 <Link to="/"> 
-                <img src={MyLogo} alt="Macolister Logo" className="h-12 w-full" />
+                {/* <img src={MyLogo} alt="Macolister Logo" className="h-12 w-full" /> */}
+                {/* <MyLogo/> */}
                 </Link>
               </div>
 
@@ -121,8 +125,12 @@ function Navbar(){
                 </li>
               </ul>
               {/*      <!-- Actions --> */}
-              <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
+              <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 cursor-pointer" onClick={toggleTheme}>
                 {/* Change this Cart Icon to something cute*/}
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                </svg>
 
 
               </div>

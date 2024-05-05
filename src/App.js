@@ -15,8 +15,11 @@ import EquipMeDisplay from './ProjectDisplays/EquipMe/EquipMeDisplay';
 import HobbyWarsDisplay from './ProjectDisplays/HobbyWars/HobbyWarsDisplay';
 import NextflixCloneDisplay from './ProjectDisplays/NetflixClone/NetflixCloneDisplay';
 
+import { ThemeProvider } from './PortfolioComponents/ThemeContext';
+
 function App() {
   return (
+    <ThemeProvider> 
     <div className="App">
       <NavBar/>
       
@@ -34,6 +37,7 @@ function App() {
 
       <Footer/>
     </div>
+    </ThemeProvider>
   );
 }
 
