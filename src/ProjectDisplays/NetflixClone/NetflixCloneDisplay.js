@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect, useCallback, useContext } from "react"
 
 // Individual Display pages as to avoid having a backend / delay
 // import HobbyWarsCompetition from "./HobbyWarsCompetition"
@@ -7,9 +7,10 @@ import React, { useState, useEffect, useCallback } from "react"
 
 import NetflixMovieCollections from "./NetflixMovieCollections";
 import NetflixTemp from "./NetflixTemp";
+import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 function NextflixCloneDisplay(){
-
+    const { theme, toggleTheme } = useContext(ThemeContext);
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState({
       'src': null,
@@ -94,7 +95,7 @@ function NextflixCloneDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className="bg-gray-50 mx-auto max-w-7xl px-5 py-16 md:px-10">
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} mx-auto max-w-full px-5 py-16 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
