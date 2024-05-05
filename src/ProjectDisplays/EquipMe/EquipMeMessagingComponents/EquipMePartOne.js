@@ -18,7 +18,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className={`text-${theme === 'dark' ? 'white' : 'black' } mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl`}>From Idle to Income: <br></br> Quick Sign-Up, Immediate Payouts.</h2>
+      <h2 className={`text-${theme === 'dark' ? 'white' : 'black'} mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl`}>From Idle to Income: <br></br> Quick Sign-Up, Immediate Payouts.</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
@@ -118,7 +118,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, ima
     <a href="/projects" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">
                         <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-[#88BDBC] rounded-lg lg:w-auto hover:bg-[#76a9a3] focus:outline-none ">Back to Projects</button>
                         
-          </a>
+    </a>
     
   </section>
   )
