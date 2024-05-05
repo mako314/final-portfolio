@@ -5,11 +5,11 @@ function Footer(){
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return(
-        <footer className={`border-b-1 relative z-30 w-full border-b border-slate-200 bg-${theme === 'dark' ? 'gray-800' : 'white/90'} shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden`}>
+        <footer className={`border-b-1 relative z-30 w-full border-b border-slate-200 bg-${theme === 'dark' ? 'gray-800' : 'white/90'} shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden dark:bg-gray-800`}>
 
     <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
 
-        <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-800'} dark:text-gray-300`}>© Built with Sticks & Mud.</p>
+        <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-800'} dark:text-white`}>© Built with Sticks & Mud.</p>
 
         <div className="flex -mx-2">
 
