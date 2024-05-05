@@ -14,7 +14,7 @@ const { theme, toggleTheme } = useContext(ThemeContext);
         <div className="relative group cursor-pointer"> 
 
           <img src={EquipMeOwnerDashboardImage} alt="EquipMe Owner Dashboard" className="mx-auto h-auto max-w-full rounded-lg shadow-md" />
-          <div onClick={() => openModal(EquipMeOwnerDashboardImage, "EquipMe Owner Dashboard", "EquipMe Owner Dashboard")} className="rounded-xl absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
+          <div onClick={() => openModal(EquipMeOwnerDashboardImage, "EquipMe Owner Dashboard", "EquipMe Owner Dashboard")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity"> 
             <p className="text-white text-xl border p-4 rounded-md">   View </p>
           </div>
 
