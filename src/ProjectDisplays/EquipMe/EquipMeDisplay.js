@@ -97,7 +97,7 @@ function EquipMeDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} mx-auto max-w-full px-5 py-16 md:px-10`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:gray-800 mx-auto max-w-full px-5 py-16 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
