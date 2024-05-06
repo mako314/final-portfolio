@@ -1,4 +1,5 @@
 import React, {useContext} from "react"
+import {Link} from 'react-router-dom';
 import HobbyWarsChallenge from '../../Assets/ProjectImages/HobbyWars/HobbyWarsChallenge.PNG'
 import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/HobbyWars/Logo/HobbyWarLogo.svg'
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
@@ -75,10 +76,10 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                 </button>
           </div>
         </div>
-        <a href="/projects" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">
+        <Link to="/projects" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">
                         <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-[#88BDBC] rounded-lg lg:w-auto hover:bg-[#76a9a3] focus:outline-none ">Back to Projects</button>
                         
-    </a>
+    </Link>
 
     </section>
     )
