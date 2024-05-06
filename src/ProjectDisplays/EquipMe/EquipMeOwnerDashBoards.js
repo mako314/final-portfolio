@@ -4,9 +4,9 @@ import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/Equip
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 
-function EquipMeOwnerDash({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
+function EquipMeOwnerDash({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
 
-const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
   return  (
     <>

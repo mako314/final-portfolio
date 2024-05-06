@@ -19,7 +19,7 @@ function EquipMeDisplay(){
       'altText': null
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     const projectDisplayComponents = [
       EquipMeHomePage,

@@ -6,7 +6,7 @@ import EquipMeOwnerCsvUpload from '../../../Assets/ProjectImages/EquipMe/EquipMe
 import { ThemeContext } from '../../../PortfolioComponents/ThemeContext';
 
 
-function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
+function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, setSelectedIndex}) {
 
   console.log("You're in Part 2")
 
@@ -15,8 +15,7 @@ function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage,
     setSelectedIndex(newIndex);
   }
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
+  const {theme} = useContext(ThemeContext);
 
   return (
     <section>

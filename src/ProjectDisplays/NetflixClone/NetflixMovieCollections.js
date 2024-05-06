@@ -4,10 +4,10 @@ import NotNetflixMovies from "../../Assets/ProjectImages/NetflixClone/NotNetflix
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 function NetflixMovieCollections({
-  openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick
+  openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick
 }) {
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">

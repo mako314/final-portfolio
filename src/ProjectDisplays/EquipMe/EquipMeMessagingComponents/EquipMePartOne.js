@@ -4,14 +4,14 @@ import EquipMeStripeOnboard from '../../../Assets/ProjectImages/EquipMe/EquipMeO
 import { ThemeContext } from '../../../PortfolioComponents/ThemeContext';
 
 
-function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
+function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, setSelectedIndex}) {
 
   const changeIndex = (newIndex) => {
     
     setSelectedIndex(newIndex);
   }
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
 
   return (

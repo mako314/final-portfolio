@@ -7,7 +7,7 @@ import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 function HobbyWarsDisplay(){
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState({
       'src': null,

@@ -1,10 +1,30 @@
-import React, {useContext} from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from './ThemeContext';
 
 import profilePhoto from '../Assets/ProjectImages/Me/IMG_4635.jpg'
+import smallProfilePhoto from '../Assets/PortfolioImages/mako-mobile.png'
 
 function AboutMe(){
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
+    const [imageSrc, setImageSrc] = useState(profilePhoto); // Default to the larger image
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 640) { // Assuming 'sm' breakpoint at 640px
+                setImageSrc(smallProfilePhoto);
+            } else {
+                setImageSrc(profilePhoto);
+            }
+        };
+
+        // Add event listener
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Initialize correct image based on current window size
+
+        // Clean up
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return(
         <section className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800`}>
             <div className="max-w-6xl px-6 py-10 mx-auto">
@@ -12,7 +32,7 @@ function AboutMe(){
                     <div className="absolute w-full bg-[#88BDBC] -z-10 md:h-96 rounded-2xl"></div>
                     
                     <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-                        <img className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src={profilePhoto} alt="Macolister Bispo" />
+                        <img className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl md:mt-4" src={imageSrc} alt="Macolister Bispo" />
                         
                         <div className="mt-2 md:mx-6">
                             <div>

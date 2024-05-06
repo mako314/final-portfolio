@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import EquipMeRentalMonitor from '../../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
 import { ThemeContext } from '../../../PortfolioComponents/ThemeContext';
 
-function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, isModalOpen, setSelectedIndex}) {
+function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, setSelectedIndex}) {
 
   console.log("You're in Part 2")
 
@@ -12,7 +12,7 @@ function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage,
     setSelectedIndex(newIndex);
   }
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
   return (
     <section>

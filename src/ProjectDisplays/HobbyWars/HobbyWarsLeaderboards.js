@@ -6,7 +6,7 @@ import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 function HobbyWarsLeaderBoards({
   openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick
 }) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
   return (
     <section className="body-font overflow-hidden">
       <div className="container mx-auto">

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import {ThemeContext} from '../PortfolioComponents/ThemeContext'
 
 function ProjectCollection() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     return (
         <div className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-[#FAFAFA]'} dark:bg-gray-800 py-6 sm:py-8 lg:py-12`}> {/* Light background for the component */}

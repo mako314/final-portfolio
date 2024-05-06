@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import { ThemeContext } from './ThemeContext';
 
 function Footer(){
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     return(
         <footer className={`border-b-1 relative z-30 w-full border-b border-slate-200 bg-${theme === 'dark' ? 'gray-800' : 'white/90'} shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden dark:bg-gray-800`}>

@@ -17,7 +17,7 @@ import {ThemeContext} from '../PortfolioComponents/ThemeContext'
 
 
 function ProjectCard(){
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
     return(
       <>
         <div>

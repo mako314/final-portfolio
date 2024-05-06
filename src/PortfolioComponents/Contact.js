@@ -4,7 +4,7 @@ import { ThemeContext } from './ThemeContext';
 function Contact(){
 
     const [result, setResult] = useState("");
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
 
   const onSubmit = async (event) => {
