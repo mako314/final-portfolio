@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import equipmeHome from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
-function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
+function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick}) {
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
 
   return (

@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, { useContext, useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
 import NotNetflixSeries from "../../Assets/ProjectImages/NetflixClone/NotNetflixTvSeries.PNG";
 import NotNetflixView from "../../Assets/ProjectImages/NetflixClone/NotNetflixTvView.PNG";
@@ -11,10 +11,30 @@ import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 
 function NetflixTemp({
-  openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick
+  openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick
 }) {
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
+  const [screenSize, setScreenSize] = useState("large"); // Default to the large
+
+  useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth < 640) { // Assuming 'sm' breakpoint at 640px
+            setScreenSize("small");
+        } else {
+            setScreenSize("large");
+        }
+    };
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initialize correct image based on current window size
+
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+}, []);
+
+
   return (
     <section class="text-gray-600 body-font">
 
@@ -88,8 +108,38 @@ function NetflixTemp({
           <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white `}>Not Netflix Continue Watching</p>
         </div>
 
+        {/* Picture Content Box 4*/}
+        {screenSize === 'small' &&
+              <div class="lg:w-1/3 sm:w-1/2 p-4 w-full">
+              <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
+                <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixInteractiveHover}/>
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Interactive Hover States</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Enjoy House Season 1 trailers.</h1>
+                  <p class="leading-relaxed"> Took advantage of Youtube embeds, mute enabled by default to save users experience!</p>
+                </div>
+              </div>
+              <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Interactive Hover</p>
+            </div>
+      }
+
+      {/* Picture Content Box 5*/}
+      {screenSize === 'small' && 
+              <div class="lg:w-1/3 sm:w-1/2 p-4 w-full">
+              <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixWatchingArthur,"Enjoy season 1 of Arthur! Please don't sue me this was practice. I'll react like the image above.", "Not Netflix Watching Arthur")}>
+                <img alt="Not Netflix Watching Arthur" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Yes one can actually watch Arthur!</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All of Season 1 available</h1>
+                  <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
+                </div>
+              </div>
+              <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Watch your Favorites!</p>
+            </div>
+      }
+
         
-        <div className="flex justify-center"> 
+        <div className={`flex ${screenSize==='small' ? 'w-screen justify-between': 'justify-center' }`}> 
 
         {/* Left arrow */}
         <button
@@ -103,30 +153,35 @@ function NetflixTemp({
       </button>
       
       {/* Picture Content Box 4*/}
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
-            <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixInteractiveHover}/>
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Interactive Hover States</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Enjoy House Season 1 trailers.</h1>
-              <p class="leading-relaxed"> Took advantage of Youtube embeds, mute enabled by default to save users experience!</p>
+      {screenSize === 'large' &&
+              <div class="lg:w-1/3 sm:w-1/2 p-4 w-full">
+              <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
+                <img alt="Interactively Hover Cards for Trailers" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixInteractiveHover}/>
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Interactive Hover States</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Enjoy House Season 1 trailers.</h1>
+                  <p class="leading-relaxed"> Took advantage of Youtube embeds, mute enabled by default to save users experience!</p>
+                </div>
+              </div>
+              <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Interactive Hover</p>
             </div>
-          </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Interactive Hover</p>
-        </div>
+      }
 
-        {/* Picture Content Box 5*/}
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixWatchingArthur,"Enjoy season 1 of Arthur! Please don't sue me this was practice. I'll react like the image above.", "Not Netflix Watching Arthur")}>
-            <img alt="Not Netflix Watching Arthur" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Yes one can actually watch Arthur!</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All of Season 1 available</h1>
-              <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
+      {/* Picture Content Box 5*/}
+      {screenSize === 'large' && 
+              <div class="lg:w-1/3 sm:w-1/2 p-4 w-full">
+              <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixWatchingArthur,"Enjoy season 1 of Arthur! Please don't sue me this was practice. I'll react like the image above.", "Not Netflix Watching Arthur")}>
+                <img alt="Not Netflix Watching Arthur" class="absolute inset-0 w-full h-full object-contain object-center" src={NotNetflixWatchingArthur}/>
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Yes one can actually watch Arthur!</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All of Season 1 available</h1>
+                  <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
+                </div>
+              </div>
+              <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Watch your Favorites!</p>
             </div>
-          </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Watch your Favorites!</p>
-        </div>
+      }
+
 
                         {/* Right arrow */}
                         <button

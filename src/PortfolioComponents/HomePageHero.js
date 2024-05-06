@@ -6,7 +6,7 @@ import { Link} from 'react-router-dom';
 
 
 function HomePageHero() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
 
     return (
     <div className={`w-full px-6 py-16 mx-auto ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>

@@ -11,8 +11,8 @@ import { ReactComponent as HobbyWarLogo } from '../../Assets/ProjectImages/Hobby
 import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 
-function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, images, selectedIndex, selectedImage, closeModal, handleModalContentClick, handleOverlayClick }) {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick }) {
+    const {theme} = useContext(ThemeContext);
 
     return (
         <section className="mx-auto max-w-7xl px-5 py-2 md:px-10 md:py-24 lg:py-4">
@@ -20,7 +20,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
                 {/* Image */}
                 <div className="w-full relative group cursor-pointer">
                 <img src={HobbyWarsUserProfileImage} alt="Hobby Wars User Profile" className="object-cover w-full h-full" />
-                    <div onClick={() => openModal(HobbyWarsUserProfileImage, "Hobby Wars User Profile", "Hobby Wars User Profile")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
+                    <div onClick={() => openModal(HobbyWarsUserProfileImage, "Hobby Wars User Profile", "Hobby Wars User Profile")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity" aria-label="View User Profile Image">
                         <p className="text-white text-xl border p-4 rounded-md">View</p>
                     </div>
                     {selectedImage?.src && (
@@ -63,37 +63,37 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
     </div>
 
     {/* Container to hold images side by side */}
-<div className="flex">
+<div className="flex flex-col md:flex-row">
         
-        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <div className="w-full md:w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
                 <img src={UserProfileChallenges} alt="Hobby Wars User Profile Challenges" className="object-cover w-full h-full shadow-lg" />
-                <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges", "User Profile Challenges Displayed")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                <p className="text-white text-xl border p-4 rounded-md">View</p>
+                <div onClick={() => openModal(UserProfileChallenges, "Maxs Hosted Challenges", "User Profile Challenges Displayed")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity" aria-label="View Hosted Challenges">
+                <p className="text-white text-xl sm:text-lg border p-4 sm:p-3 rounded-md">View</p>
             </div>
         </div>
         
 
 
-        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <div className="w-full md:w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
         <img src={UserProfileHobbies} alt="Hobby Wars User Profile" className="object-fit w-full h-full shadow-lg" />
-                <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions", "Users Hobbies and Submissions")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                <p className="text-white text-xl border p-4 rounded-md">View</p>
+                <div onClick={() => openModal(UserProfileHobbies, "Maxs Hobbies & Submissions", "Users Hobbies and Submissions")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity" aria-label="View Profile Hobbies">
+                <p className="text-white text-xl sm:text-lg border p-4 sm:p-3 rounded-md">View</p>
             </div>
         </div>
 
-        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <div className="w-full md:w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
                 <img src={UserReviewEntries} alt="Hobby Wars User Review Entries" className="object-cover w-full h-full shadow-lg" />
-                <div onClick={() => openModal(UserReviewEntries, "Max Reviewing Entries", "User Reviewing Entries")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                <p className="text-white text-xl border p-4 rounded-md">View</p>
+                <div onClick={() => openModal(UserReviewEntries, "Max Reviewing Entries", "User Reviewing Entries")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity" aria-label="View User Entries">
+                <p className="text-white text-xl sm:text-lg border p-4 sm:p-3 rounded-md">View</p>
             </div>
         </div>
         
 
 
-        <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
+        <div className="w-full md:w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
         <img src={UserChallengesMapped} alt="Hobby Wars User Profile" className="object-fit w-full h-full shadow-lg" />
-                <div onClick={() => openModal(UserChallengesMapped, "Max is Excited About All the Challenges!", "Users Challenge Options")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
-                <p className="text-white text-xl border p-4 rounded-md">View</p>
+                <div onClick={() => openModal(UserChallengesMapped, "Max is Excited About All the Challenges!", "Users Challenge Options")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity" aria-label="View Challenges Mapped">
+                <p className="text-white text-xl sm:text-lg border p-4 sm:p-3 rounded-md">View</p>
             </div>
         </div>
 
