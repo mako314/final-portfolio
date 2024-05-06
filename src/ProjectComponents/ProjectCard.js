@@ -21,7 +21,7 @@ function ProjectCard(){
     return(
       <>
         <div>
-        <Link to="/EquipMe" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/EquipMe" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={equipmeHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -37,10 +37,10 @@ function ProjectCard(){
           </div>
         </Link>
 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
-            <a href="https://www.equipme.live" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>EquipMe</a>
-            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} text-sm`}>Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. 
+            <a href="https://www.equipme.live" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>EquipMe</a>
+            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>Discover a world of possibilities with EquipMe, where renting the right equipment for your project has never been easier. 
             <br/> <br/> 
             *** Clicking the title will take you to an external site: EquipMe - Hosted on Netlify.</span>
             <br/><br/> 
@@ -52,8 +52,8 @@ function ProjectCard(){
 
       {/* PORTFOLIO SITE 2 */}
       <div>
-        <Link to="/HobbyWars" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
-          <img src={HobbyWarsHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
+        <Link to="/HobbyWars" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+          <img src={HobbyWarsHome} loading="lazy" alt="HobbyWars Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
@@ -63,10 +63,10 @@ function ProjectCard(){
         </Link>
 
 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
-            <a href="https://stellular-tapioca-bfc908.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>HobbyWars</a>
-            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} text-sm`}>Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. 
+            <a href="https://stellular-tapioca-bfc908.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>HobbyWars</a>
+            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>Join the excitement of Hobby Wars and discover a platform where you can compete, connect with like-minded individuals, and showcase your creative prowess. 
             
             <br/><br/> 
             *** Clicking the title will take you to an external site: HobbyWars - Hosted on Netlify.
@@ -86,7 +86,7 @@ function ProjectCard(){
         {/* https://youtu.be/ctFBd6pSzNA */}
         {/* {Adda} */}
 
-        <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
@@ -96,10 +96,10 @@ function ProjectCard(){
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">OpenAI API</span>
           </div>
         </a>
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
-            <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>Adda</a>
-            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} text-sm`}>Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. 
+            <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>Adda</a>
+            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>Our chatbot won "Most Innovative" in the hackathon. Adda is an educational chatbot who teaches students with disabilities, born out of a two-week hackathon. 
             <br/><br/> 
             *** Clicking the title OR card will take you to an external site: YouTube.
             <br/><br/> 
@@ -113,7 +113,7 @@ function ProjectCard(){
       {/* PORTFOLIO SITE 4 */}
         <div>
         {/* I think href is resetting state, might move to make only href the youtube link one */}
-        <Link to="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -125,11 +125,11 @@ function ProjectCard(){
           </div>
         </Link>
 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
           
-          <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} lg:text-xl`}>Definitely Not Netflix</a>
-            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} text-sm`}>A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
+          <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>Definitely Not Netflix</a>
+            <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
              <br/> <br/> *** Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
              <br/><br/> 
           <a href="https://github.com/mako314/netflix-final" target="_blank" rel="noreferrer" className="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
