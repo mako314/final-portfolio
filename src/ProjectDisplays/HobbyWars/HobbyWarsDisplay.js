@@ -1,12 +1,13 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect, useCallback, useContext } from "react"
 
 // Individual Display pages as to avoid having a backend / delay
 import HobbyWarsCompetition from "./HobbyWarsCompetition"
 import HobbyWarsLeaderBoards from "./HobbyWarsLeaderboards"
 import HobbyWarsUserProfile from "./HobbyWarsUserProfiles"
+import { ThemeContext } from '../../PortfolioComponents/ThemeContext';
 
 function HobbyWarsDisplay(){
-
+    const { theme, toggleTheme } = useContext(ThemeContext);
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedImage, setSelectedImage] = useState({
       'src': null,
@@ -15,23 +16,10 @@ function HobbyWarsDisplay(){
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
-    console.log(selectedIndex)
-    // const images = [
-    //   HobbyWarsChallenge,
-    //   HobbyWarsLeaderBoardsImage,
-    //   HobbyWarsUserProfileImage,
-    //   UserProfileChallenges,
-    //   UserProfileHobbies,
-    //   HobbyWarsChallengesMapped,
-    //   HobbyWarsChallenge
-    // ]
-
     const projectDisplayComponents = [
       HobbyWarsCompetition,
       HobbyWarsLeaderBoards,
       HobbyWarsUserProfile,
-      // EquipMeMessagingOwnerToUser,
-      // EquipMeOwnerDash
     ]
 
 
@@ -103,7 +91,7 @@ function HobbyWarsDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className="bg-gray-50 mx-auto max-w-7xl px-5 py-16 md:px-10">
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 mx-auto max-w-full px-5 py-16 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 

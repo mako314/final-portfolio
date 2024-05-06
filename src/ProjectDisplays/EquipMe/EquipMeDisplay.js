@@ -1,16 +1,4 @@
 import React, { useState, useEffect, useCallback, useContext } from "react"
-import equipmeHomeImage from '../../Assets/ProjectImages/EquipMe/equipmeHome.PNG'
-
-// Images
-// import EquipMeMessagingImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-// import EquipMeMessagingOwnerToUserImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeOwnerInbox.PNG'
-// import EquipMeMessagingUserToOwnerImage from '../../Assets/ProjectImages/EquipMe/EquipMeMessaging/EquipMeUserInbox.PNG'
-import EquipMeOwnerDashboardImage from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeOwnerDashboard.PNG'
-import EquipMeRentalMonitor from '../../Assets/ProjectImages/EquipMe/EquipMeDashboard/EquipMeRentalAgreementsAll.PNG'
-import EquipMeOwnerCsvUpload from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerCsvUpload/EquipMeOwnerCSVUpload.PNG'
-import EquipMeStripeOnboard from '../../Assets/ProjectImages/EquipMe/EquipMeOwnerStripeOnboarding/EquipMeStripeOnboarding.PNG'
-
-
 
 // Individual Display pages as to avoid having a backend / delay
 import EquipMeHomePage from "./EquipMeHomePage"
@@ -109,7 +97,7 @@ function EquipMeDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} mx-auto max-w-full px-5 py-16 md:px-10`}>
+        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:gray-800 mx-auto max-w-full px-5 py-16 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
