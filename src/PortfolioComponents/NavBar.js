@@ -1,6 +1,7 @@
 import React, { useState,useContext } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
-// import { ReactComponent as MyLogo } from '../Assets/PortfolioImages/macolister-icon-only.svg';
+import { ReactComponent as MyLogo } from '../Assets/PortfolioImages/mako-logo.svg';
+import { ReactComponent as MyLogoDarkMode } from '../Assets/PortfolioImages/mako-logo-white.svg';
 import { ThemeContext } from './ThemeContext';
 
 
@@ -27,9 +28,9 @@ function Navbar(){
                 aria-current="page"
                 className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               >
-                <Link to="/"> 
+                <Link to="/" className='ml-8'> 
                 {/* <img src={MyLogo} alt="Macolister Logo" className="h-12 w-full" /> */}
-                {/* <MyLogo/> */}
+                {theme==='dark' ? <MyLogoDarkMode/> : <MyLogo/>}
                 </Link>
               </div>
 
@@ -122,14 +123,11 @@ function Navbar(){
                 </li>
               </ul>
               {/*      <!-- Actions --> */}
-              <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 cursor-pointer" onClick={toggleTheme}>
-                {/* Change this Cart Icon to something cute*/}
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke={`${theme === 'dark' ? 'white' : '#2c3e50'}`} fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <div className="ml-auto mr-8 flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 cursor-pointer" onClick={toggleTheme}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke={`${theme === 'dark' ? 'white' : '#88BDBC'}`} fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
                 </svg>
-
-
               </div>
             </nav>
           </div>
