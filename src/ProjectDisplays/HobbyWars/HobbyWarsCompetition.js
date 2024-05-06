@@ -17,7 +17,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
 
             {/* Modal / View button for images */}
             <div className="relative group cursor-pointer"> 
-            <img src={HobbyWarsChallenge} alt="" className="object-contain" />
+            <img src={HobbyWarsChallenge} alt="Hobby Wars Challenge Display" className="object-contain" />
 
             <div onClick={() => openModal(HobbyWarsChallenge, "Hobby Wars Challenge Page", "Challenge Page for Hobby Wars")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
               <p className="text-white text-xl border p-4 rounded-md">View</p>

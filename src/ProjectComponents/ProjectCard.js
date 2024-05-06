@@ -130,7 +130,7 @@ function ProjectCard(){
           
           <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>Definitely Not Netflix</a>
             <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
-             <br/> <br/> *** Clicking the title will take you to an external site (DefinitelyNotNetflix - Hosted on Netlify).</span>
+             <br/> <br/> *** Clicking the title will take you to an external site DefinitelyNotNetflix - Hosted on Netlify.</span>
              <br/><br/> 
           <a href="https://github.com/mako314/netflix-final" target="_blank" rel="noreferrer" className="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Github</a>
 

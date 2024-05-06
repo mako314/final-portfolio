@@ -82,7 +82,7 @@ function HobbyWarsUserProfile({ openModal, goToPreviousPage, goToNextPage, image
         </div>
 
         <div className="w-1/2 relative group cursor-pointer ml-4 mr-4 mt-4">
-                <img src={UserReviewEntries} alt="Hobby Wars User Profile Challenges" className="object-cover w-full h-full shadow-lg" />
+                <img src={UserReviewEntries} alt="Hobby Wars User Review Entries" className="object-cover w-full h-full shadow-lg" />
                 <div onClick={() => openModal(UserReviewEntries, "Max Reviewing Entries", "User Reviewing Entries")} className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center group-hover:opacity-100 opacity-0 transition-opacity">
                 <p className="text-white text-xl border p-4 rounded-md">View</p>
             </div>
