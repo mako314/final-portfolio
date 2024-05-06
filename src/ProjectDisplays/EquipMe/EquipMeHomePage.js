@@ -21,7 +21,7 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, images, sel
 
             {selectedImage?.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
-                <div className="relative rounded-lg bg-white max-w-7xl max-h-full overflow-auto p-6" onClick={handleModalContentClick}>
+                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 max-w-7xl max-h-full p-6`} onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -29,7 +29,7 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, images, sel
                     </svg>
                     </button>
                     <img src={selectedImage.src} alt={selectedImage.altText} className="w-full h-auto mx-auto" />
-                    <div className="bg-gray-200 px-4 py-2 rounded-lg"> 
+                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'} dark:bg-gray-300 mt-2 px-4 py-2 rounded-lg`}> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
                 </div>
@@ -37,12 +37,12 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, images, sel
             )}
             
             <div className="sm:max-w-sm md:max-w-md lg:max-w-lg">
-                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : 'gray-600'} md:mb-10 lg:mb-12`}> EquipMe was founded with a simple yet powerful idea: to create a platform that connects people who need equipment for various tasks with those who have tools and machinery sitting idle. The inspiration behind EquipMe stemmed from a personal experience – observing a family member frequently seeking equipment rentals and realizing that many people may own valuable tools that often went unused.
+                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : 'gray-600'} dark:text-white md:mb-10 lg:mb-12`}> EquipMe was founded with a simple yet powerful idea: to create a platform that connects people who need equipment for various tasks with those who have tools and machinery sitting idle. The inspiration behind EquipMe stemmed from a personal experience – observing a family member frequently seeking equipment rentals and realizing that many people may own valuable tools that often went unused.
                 <br></br><br></br>
                 Our mission is to make equipment rental more accessible and efficient for everyone. Whether you're a homeowner tackling a DIY project, a professional in need of specialized gear, or someone with tools gathering dust in your garage, EquipMe was built to meet your needs. We believe that by facilitating equipment sharing, we can not only save individuals time and money but also foster a stronger sense of community and collaboration among users.
                 </p>
-                <p className={`text-${theme === 'dark' ? 'white' : 'gray-600'} font-bold`}>Macolister Bispo</p>
-                <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-600'} `}> FULL-STACK DEVELOPER</p>
+                <p className={`text-${theme === 'dark' ? 'white' : 'gray-600'} dark:text-white font-bold`}>Macolister Bispo</p>
+                <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-600'} dark:text-white `}> FULL-STACK DEVELOPER</p>
                 
                 <div className="flex justify-between items-center mt-4">
                   {/* Left arrow */}
