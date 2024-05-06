@@ -20,7 +20,7 @@ function AboutMe(){
                                 <p className="text-white ">Fullstack Developer</p>
                             </div>
 
-                            <p className="mt-4 text-lg leading-relaxed text-white md:text-xl"> Experienced Python developer with expertise in Flask, JavaScript, and React. Proven track record in project success and team leadership. Graduate of Flatiron School's Software Engineering program. Experince with administrative and inventory management. Passionate about merging technology and creativity.</p>
+                            <p className="mt-4 text-lg leading-relaxed text-white md:text-xl"> Software Engineer with a passion for merging technology and creativity. I have a proven track record of success in project management and team leadership. Proficient in Python, Flask, JavaScript, and React, and am always eager to learn new technologies. Grew up loving video games, and still enjoy them today. Enjoyer of reading, yoga, BJJ, language learning, and a good discussion. I am always trying new things and always looking for ways to improve myself.</p>
                         </div>
                     </div>
                 </div>
