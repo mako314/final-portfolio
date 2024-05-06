@@ -20,7 +20,7 @@ function NetflixTemp({
 
 {selectedImage?.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
-                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'white'} max-w-7xl max-h-full  p-6`} onClick={handleModalContentClick}>
+                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 max-w-7xl max-h-full  p-6`} onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -28,7 +28,7 @@ function NetflixTemp({
                     </svg>
                     </button>
                     <img src={selectedImage.src} alt={selectedImage.altText} className="w-full h-auto mx-auto" />
-                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'} mt-2 px-4 py-2 rounded-lg`}> 
+                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'} dark:bg-gray-300 mt-2 px-4 py-2 rounded-lg`}> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
                 </div>
@@ -37,8 +37,8 @@ function NetflixTemp({
 
     <div class="container px-5 mx-auto">
       <div class="flex flex-col text-center w-full mb-5">
-        <h1 class={`sm:text-3xl text-2xl font-medium title-font mb-4 text-${theme === 'dark' ? 'white' : 'gray-900'}`}> Definitely Not Netflix</h1>
-        <p class={`lg:w-full mx-auto leading-relaxed text- text-${theme === 'dark' ? 'white' : 'gray-900'} text-base`}> Teaming up with a new connection from GrammerHub, we're building a Netflix clone. We've nailed down the app's layout (design is a work in progress) for various devices and added hover states for interactivity. Navigation between Home, Movies, TV Serie, with bookmarking planned. Show search functionality incorporates a search result page, and as a full-stack app, we're developing many more backend features. Plans for an authentication screen are in the pipeline. 
+        <h1 class={`sm:text-3xl text-2xl font-medium title-font mb-4 text-${theme === 'dark' ? 'white' : 'gray-900'}dark:text-white `}> Definitely Not Netflix</h1>
+        <p class={`lg:w-full mx-auto leading-relaxed text- text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white text-base`}> Teaming up with a new connection from GrammerHub, we're building a Netflix clone. We've nailed down the app's layout (design is a work in progress) for various devices and added hover states for interactivity. Navigation between Home, Movies, TV Serie, with bookmarking planned. Show search functionality incorporates a search result page, and as a full-stack app, we're developing many more backend features. Plans for an authentication screen are in the pipeline. 
         
         <br/><br/>
         Hover the cards for more information, 
@@ -58,7 +58,7 @@ function NetflixTemp({
               <p class="leading-relaxed">Every watch helps extend our licensing deals. The goal is to work on getting this data cached. Filterable too!</p>
             </div>
           </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} `}>Not Netflix Tv Series</p>
+          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Tv Series</p>
         </div>
 
         {/* Picture Content Box 2*/}
@@ -84,7 +84,7 @@ function NetflixTemp({
               <p class="leading-relaxed">Awesome feature that tests many things, lot of flags. Capturing timestamps and using Video Embed element!</p>
             </div>
           </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} `}>Not Netflix Continue Watching</p>
+          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white `}>Not Netflix Continue Watching</p>
         </div>
 
         
@@ -100,6 +100,7 @@ function NetflixTemp({
           <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
         </svg>
       </button>
+      
       {/* Picture Content Box 4*/}
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative cursor-pointer" onClick={() => openModal(NotNetflixInteractiveHover,"When a card is hovered, House Season 1 plays", "Interactively Hover Cards for Trailers")}>
@@ -110,7 +111,7 @@ function NetflixTemp({
               <p class="leading-relaxed"> Took advantage of Youtube embeds, mute enabled by default to save users experience!</p>
             </div>
           </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} `}>Not Netflix Interactive Hover</p>
+          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Interactive Hover</p>
         </div>
 
         {/* Picture Content Box 5*/}
@@ -123,7 +124,7 @@ function NetflixTemp({
               <p class="leading-relaxed">Although we don't currently support user login, we track watch history and have crazy content uptime!.</p>
             </div>
           </div>
-          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} `}>Not Netflix Watch your Favorites!</p>
+          <p class={`text-center mt-2 leading-relaxed italic text-${theme === 'dark' ? 'white' : 'gray-900'} dark:text-white`}>Not Netflix Watch your Favorites!</p>
         </div>
 
                         {/* Right arrow */}
