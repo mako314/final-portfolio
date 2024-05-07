@@ -21,7 +21,7 @@ function ProjectCard(){
     return(
       <>
         <div>
-        <Link to="/EquipMe" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/EquipMe" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={equipmeHome} loading="lazy" alt="EquipMe Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -52,7 +52,7 @@ function ProjectCard(){
 
       {/* PORTFOLIO SITE 2 */}
       <div>
-        <Link to="/HobbyWars" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/HobbyWars" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={HobbyWarsHome} loading="lazy" alt="HobbyWars Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
@@ -86,7 +86,7 @@ function ProjectCard(){
         {/* https://youtu.be/ctFBd6pSzNA */}
         {/* {Adda} */}
 
-        <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
@@ -113,7 +113,7 @@ function ProjectCard(){
       {/* PORTFOLIO SITE 4 */}
         <div>
         {/* I think href is resetting state, might move to make only href the youtube link one */}
-        <Link to="/NotNetflix" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} dark:bg-gray-800 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
+        <Link to="/NotNetflix" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={NetflixCloneHome} loading="lazy" alt="Netflix Clone Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>

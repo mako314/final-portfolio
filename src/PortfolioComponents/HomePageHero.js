@@ -9,7 +9,7 @@ function HomePageHero() {
     const {theme} = useContext(ThemeContext);
 
     return (
-    <div className={`w-full px-6 py-16 mx-auto ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
+    <div className={`w-full px-6 py-16 mx-auto dark:bg-gray-800 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="flex flex-col lg:flex-row items-center dark:bg-gray-800">
             <div className="w-full lg:w-1/2">
                 <img className="w-full h-full lg:max-w-3xl rounded-full" src={HeroImage} alt="Hero"/>
