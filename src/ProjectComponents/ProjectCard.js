@@ -55,9 +55,9 @@ function ProjectCard(){
         <Link to="/HobbyWars" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={HobbyWarsHome} loading="lazy" alt="HobbyWars Home Page" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">React</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
           </div>
         </Link>
@@ -89,9 +89,9 @@ function ProjectCard(){
         <a href="https://youtu.be/ctFBd6pSzNA" target="_blank" rel="noreferrer" className={`bg-gray-100 group relative mb-2 block h-96 overflow-hidden rounded-lg shadow-lg lg:mb-3`}>
           <img src={Adda} loading="lazy" alt="Adda" className="h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
           <div className="absolute px-3 left-0 bottom-2 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
-            <span className="rounded-lg bg-[#88BDBC] px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Next.js</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Python</span>
+            <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">Flask</span>
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">SQLAlchemy</span>
             <span className="rounded-lg bg-[#88BDBC] px-1.5 py-0.5 text-sm font-bold uppercase tracking-wider text-white">OpenAI API</span>
           </div>
