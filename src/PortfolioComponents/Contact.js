@@ -116,7 +116,7 @@ function Contact(){
             {/* FORM COMPONENT */}
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
-                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray rounded-sm shadow-2xl lg:max-w-xl shadow-gray-500/50">
+                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray shadow-l lg:max-w-xl shadow-gray-500/50 border-2 border-white rounded-xl">
                 <h1 className="text-lg font-medium text-center text-[#34568B]">Connect with me!</h1>
 
                     <form onSubmit={onSubmit} className="mt-6">
