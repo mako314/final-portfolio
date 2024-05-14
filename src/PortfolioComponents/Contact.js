@@ -121,8 +121,8 @@ function Contact(){
             {/* FORM COMPONENT */}
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
-                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray shadow-l lg:max-w-xl shadow-gray-500/50 border-2 border-white rounded-xl">
-                <h1 className="text-lg font-medium text-center text-[#34568B]">Connect with me!</h1>
+                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray shadow-l lg:max-w-xl shadow-gray-500/50 border-2 border-[#88BDBC] rounded-xl">
+                <h1 className={`text-lg font-medium text-center ${theme === 'dark' ? 'text-white ' : 'text-[#34568B]'}`}>Connect with me!</h1>
 
                     <form onSubmit={onSubmit} className="mt-6">
                         <div className="flex-1">
@@ -150,7 +150,7 @@ function Contact(){
                             Get in touch
                         </button>
                     </form>
-                    <span className="">{result}</span>
+                    <span className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>{result}</span>
                 </div>
             </div>
 
