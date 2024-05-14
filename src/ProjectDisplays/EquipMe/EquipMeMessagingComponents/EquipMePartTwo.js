@@ -8,7 +8,6 @@ import { ThemeContext } from '../../../PortfolioComponents/ThemeContext';
 
 function EquipMeMessagingOwnerToUser({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, setSelectedIndex}) {
 
-  console.log("You're in Part 2")
 
   const changeIndex = (newIndex) => {
     

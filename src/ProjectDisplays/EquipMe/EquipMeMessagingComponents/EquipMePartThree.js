@@ -5,8 +5,6 @@ import { ThemeContext } from '../../../PortfolioComponents/ThemeContext';
 
 function EquipMeMessagingUserToOwner({openModal, goToPreviousPage, goToNextPage, selectedImage, closeModal, handleModalContentClick, handleOverlayClick, setSelectedIndex}) {
 
-  console.log("You're in Part 2")
-
   const changeIndex = (newIndex) => {
     
     setSelectedIndex(newIndex);
