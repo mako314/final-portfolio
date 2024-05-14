@@ -13,7 +13,7 @@ function Contact(){
     const formData = new FormData(event.target);
     console.log("Testing Form Data:", formData.entries.length)
     if (formData.entries.length <= 0){
-        setResult("Fields were empty! Please check your inputs and try again!")
+        setResult(" ⛔ Fields were empty! Please check your inputs and try again! ⛔ ")
         return
     }
     // This key is public btw
@@ -150,7 +150,7 @@ function Contact(){
                             Get in touch
                         </button>
                     </form>
-                    <span className={`block mb-2 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>{result}</span>
+                    <span className={`block mb-2 py-3 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>{result}</span>
                 </div>
             </div>
 
