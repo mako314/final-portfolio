@@ -38,12 +38,12 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, selectedIma
             )}
             
             <div className="sm:max-w-sm md:max-w-md lg:max-w-lg">
-                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : 'gray-600'}  md:mb-10 lg:mb-12`}> EquipMe was founded with a simple yet powerful idea: to create a platform that connects people who need equipment for various tasks with those who have tools and machinery sitting idle. The inspiration behind EquipMe stemmed from a personal experience – observing a family member frequently seeking equipment rentals and realizing that many people may own valuable tools that often went unused.
+                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : 'gray-700'}  md:mb-10 lg:mb-12`}> EquipMe was founded with a simple yet powerful idea: to create a platform that connects people who need equipment for various tasks with those who have tools and machinery sitting idle. The inspiration behind EquipMe stemmed from a personal experience – observing a family member frequently seeking equipment rentals and realizing that many people may own valuable tools that often went unused.
                 <br></br><br></br>
                 Our mission is to make equipment rental more accessible and efficient for everyone. Whether you're a homeowner tackling a DIY project, a professional in need of specialized gear, or someone with tools gathering dust in your garage, EquipMe was built to meet your needs. We believe that by facilitating equipment sharing, we can not only save individuals time and money but also foster a stronger sense of community and collaboration among users.
                 </p>
-                <p className={`text-${theme === 'dark' ? 'white' : 'gray-600'}  font-bold`}>Macolister Bispo</p>
-                <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-600'}  `}> FULL-STACK DEVELOPER</p>
+                <p className={`text-${theme === 'dark' ? 'white' : 'gray-800'}  font-bold`}>Macolister Bispo</p>
+                <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-800'}  `}> FULL-STACK DEVELOPER</p>
                 
                 <div className="flex justify-between items-center mt-4">
                   {/* Left arrow */}
@@ -51,7 +51,7 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, selectedIma
                   onClick={goToPreviousPage}
                   aria-label="Previous"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`} className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                   </svg>
                 </button>
@@ -61,7 +61,7 @@ function EquipMeHomePage({openModal, goToPreviousPage, goToNextPage, selectedIma
                   onClick={goToNextPage}
                   aria-label="Next"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`} className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </button>
