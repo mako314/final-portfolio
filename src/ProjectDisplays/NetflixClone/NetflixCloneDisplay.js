@@ -19,7 +19,6 @@ function NextflixCloneDisplay(){
     })
     const [selectedIndex, setSelectedIndex] = useState(0);
 
-    console.log(selectedIndex)
 
     const projectDisplayComponents = [
       NetflixMovieCollections,
@@ -29,7 +28,6 @@ function NextflixCloneDisplay(){
 
     //incorporate alt
     const openModal = (imageSrc, imageInfoText, imageAltText) => {
-      console.log("THE IMAGE:", imageSrc)
         setSelectedImage({
           'src': imageSrc,
           'infoText': imageInfoText,

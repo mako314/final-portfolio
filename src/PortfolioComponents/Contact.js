@@ -11,7 +11,6 @@ function Contact(){
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-    console.log("Testing Form Data:", formData.entries.length)
     if (formData.entries.length <= 0){
         setResult(" ⛔ Fields were empty! Please check your inputs and try again! ⛔ ")
         return
@@ -31,7 +30,7 @@ function Contact(){
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
+    //   console.log("Error", data);
       setResult(data.message);
     }
   };
