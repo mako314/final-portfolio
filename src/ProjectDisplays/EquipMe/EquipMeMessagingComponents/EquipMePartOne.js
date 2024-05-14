@@ -19,7 +19,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
   
     <div className="mx-auto w-full max-w-7xl px-5 md:px-10">
       
-      <h2 className={`text-${theme === 'dark' ? 'white' : 'black'} dark:text-white mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl`}>From Idle to Income: <br></br> Quick Sign-Up, Immediate Payouts.</h2>
+      <h2 className={`text-${theme === 'dark' ? 'white' : 'black'} mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:mb-16 lg:text-5xl`}>From Idle to Income: <br></br> Quick Sign-Up, Immediate Payouts.</h2>
       
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
       <div className="relative group cursor-pointer">
@@ -33,7 +33,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
 
       {selectedImage?.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
-                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 max-w-7xl max-h-full p-6`} onClick={handleModalContentClick}>
+                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'gray-100'}  max-w-7xl max-h-full p-6`} onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -41,7 +41,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
                     </svg>
                     </button>
                     <img src={selectedImage.src} alt={selectedImage.altText} className="w-full h-auto mx-auto" />
-                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'} dark:bg-gray-300 mt-2 px-4 py-2 rounded-lg`}> 
+                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'}  mt-2 px-4 py-2 rounded-lg`}> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
                 </div>
@@ -51,18 +51,18 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
 
         <div className="flex flex-col gap-4">
           <span 
-          className={`flex max-w-sm rounded-md p-4 text-white bg-${theme === 'dark' ? 'gray-700' : 'white'} dark:bg-gray-700 border-l-4 border-${theme === 'dark' ? 'blue-500' : 'black'} dark:border-blue-500 shadow-${theme === 'dark' ? '2xl' : 'md'} dark:shadow-2xl cursor-pointer`} onClick={() => changeIndex(1)}>
+          className={`flex max-w-sm rounded-md p-4 text-white bg-${theme === 'dark' ? 'gray-700' : 'white'}  border-l-4 border-${theme === 'dark' ? 'blue-500' : 'black'} shadow-${theme === 'dark' ? '2xl' : 'md'}  cursor-pointer`} onClick={() => changeIndex(1)}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx7DSg4nCl19gISVmRKabAjuby1wzdjG85rZzqdnn5g&s"
               alt="Stripe Logo"
               className="object-contain w-12 h-12"
             />
             <div className="ml-4 flex flex-col">
-              <p className={`text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white font-semibold`}>Get Paid Immediately</p>
-              <p className={`text-sm text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white`}> Upon sign-up, create a Stripe account or save it for later!</p>
+              <p className={`text-${theme === 'dark' ? 'white' : 'gray-800'} font-semibold`}>Get Paid Immediately</p>
+              <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-700'}`}> Upon sign-up, create a Stripe account or save it for later!</p>
               
               <br/>
-              <p className={`text-sm text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white`}>*Required to be paid.</p>
+              <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-700'}`}>*Required to be paid.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222]  [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(2)}>
@@ -72,8 +72,8 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
             className="object-contain w-16 h-16" 
             />
             <div className="ml-4 flex flex-col">
-              <p className={`text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white font-semibold`}>Diverse Upload Options for Owners</p>
-              <p className={`text-sm text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white`}>From CSV to XML and beyond, we've got your uploads covered, ensuring seamless connectivity at every stage.</p>
+              <p className={`text-${theme === 'dark' ? 'white' : 'gray-800'} font-semibold`}>Diverse Upload Options for Owners</p>
+              <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-700'}`}>From CSV to XML and beyond, we've got your uploads covered, ensuring seamless connectivity at every stage.</p>
             </div>
           </span>
           <span className="flex max-w-sm rounded-md p-4 text-[#222222] [box-shadow:rgba(0,_0,_0,_0.05)_0px_0px_10px] cursor-pointer" onClick={() => changeIndex(3)}>
@@ -83,8 +83,8 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
             className="object-contain w-16 h-16" 
             />
           <div className="ml-4 flex flex-col">
-            <p className={`text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white font-semibold`}>Streamline Your Rental Experience</p>
-            <p className={`text-sm text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white`}>Effortlessly monitor and manage all your rentals from one convenient location.</p>
+            <p className={`text-${theme === 'dark' ? 'white' : 'gray-800'} font-semibold`}>Streamline Your Rental Experience</p>
+            <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-700'}`}>Effortlessly monitor and manage all your rentals from one convenient location.</p>
           </div>
           </span>
         </div>
@@ -99,7 +99,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
                   aria-label="Previous"
                   className='mr-5'
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`}  className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                   </svg>
                 </button>
@@ -109,7 +109,7 @@ function EquipMeMessagingDisplay({openModal, goToPreviousPage, goToNextPage, sel
                   onClick={goToNextPage}
                   aria-label="Next"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`}  className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </button>

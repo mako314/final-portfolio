@@ -24,7 +24,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
           </div>
           {selectedImage?.src && (
                 <div id="modal-overlay" className="fixed top-0 left-0 h-full w-full flex items-center justify-center p-4 bg-black bg-opacity-50 z-50" onClick={handleOverlayClick}>
-                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 max-w-7xl max-h-full overflow-auto p-6`} onClick={handleModalContentClick}>
+                <div className={`relative rounded-lg bg-${theme === 'dark' ? 'gray-800' : 'gray-100'} max-w-7xl max-h-full overflow-auto p-6`} onClick={handleModalContentClick}>
                     <button onClick={closeModal} className="absolute top-0 right-0 mt-4 mr-4 px-2 py-2 bg-gray-300 rounded hover:bg-red-200">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -32,7 +32,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                     </svg>
                     </button>
                     <img src={selectedImage.src} alt={selectedImage.altText} className="w-full h-auto mx-auto" />
-                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'} dark:bg-gray-300 mt-2 px-4 py-2 rounded-lg`}> 
+                    <div className={`bg-${theme === 'dark' ? 'gray-300' : 'gray-200'}  mt-2 px-4 py-2 rounded-lg`}> 
                     <p className="text-center"> {selectedImage.infoText} </p>
                     </div> 
                 </div>
@@ -40,9 +40,9 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
             )}
             </div>
 
-            <div className={`text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white sm:max-w-sm md:max-w-md lg:max-w-lg justify-center`}>
+            <div className={`text-${theme === 'dark' ? 'white' : 'gray-700'} sm:max-w-sm md:max-w-md lg:max-w-lg justify-center`}>
             
-                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : '[#636262]'} dark:text-white md:mb-10 lg:mb-12`}> Hobby Wars was founded on a powerful idea: to create a vibrant platform that connects enthusiasts from all walks of life to celebrate their passions through friendly competition and creative expression. Our inspiration for Hobby Wars stemmed from a shared love for hobbies and the realization that there's an extraordinary pool of talent waiting to be showcased.
+                <p className={`mb-6 max-w-md text-${theme === 'dark' ? 'white' : 'gray-700'} md:mb-10 lg:mb-12`}> Hobby Wars was founded on a powerful idea: to create a vibrant platform that connects enthusiasts from all walks of life to celebrate their passions through friendly competition and creative expression. Our inspiration for Hobby Wars stemmed from a shared love for hobbies and the realization that there's an extraordinary pool of talent waiting to be showcased.
                 <br></br><br></br>
 
                 Our mission is to make hobby participation more accessible and enjoyable for everyone. Whether you're an artist, chef, gardener, musician, or a hobbyist of any kind, Hobby Wars was designed with you in mind. We believe that by fostering a sense of community and camaraderie, we can inspire creativity, celebrate individual talents, and form lasting connections among our users.
@@ -50,7 +50,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                 Hobby Wars is more than just a platform; it's a vibrant community that empowers individuals to compete, connect, and shine. We are committed to simplifying the competition process, making it a fun and rewarding experience for everyone involved. Join us on this journey to unlock the full potential of your hobbies and to help others do the same.
                 </p>
                 <p className="font-bold"><HobbyWarLogo/> Macolister Bispo </p>
-                <p className={`text-sm text-${theme === 'dark' ? 'white' : '[#636262]'}`}>Full stack developer</p>
+                <p className={`text-sm text-${theme === 'dark' ? 'white' : 'gray-800'}`}>Full stack developer</p>
             </div>
             </div>
             <div className="flex justify-center items-center mt-8 py-5">
@@ -60,7 +60,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                   aria-label="Previous"
                   className='mr-5'
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`} className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                   </svg>
                 </button>
@@ -70,7 +70,7 @@ function HobbyWarsCompetition({openModal, goToPreviousPage, goToNextPage, images
                   onClick={goToNextPage}
                   aria-label="Next"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : 'black'}`} className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill={`${theme === 'dark' ? 'white' : '#34568B'}`} className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </button>
