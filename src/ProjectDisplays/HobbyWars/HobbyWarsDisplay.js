@@ -91,7 +91,7 @@ function HobbyWarsDisplay(){
     const SelectedComponent = projectDisplayComponents[selectedIndex]
     
     return( 
-        <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 mx-auto max-w-full px-5 py-16 md:px-10`}>
+        <div  className={`flex flex-row justify-center items-center bg-${theme === 'dark' ? 'gray-800' : 'gray-100'} min-w-full px-12 py-24 md:px-10`}>
           <SelectedComponent  
           openModal={openModal} 
           goToPreviousPage={goToPreviousPage} 
