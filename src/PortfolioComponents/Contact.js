@@ -11,6 +11,11 @@ function Contact(){
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
+    console.log("Testing Form Data:", formData.entries.length)
+    if (formData.entries.length <= 0){
+        setResult("Fields were empty! Please check your inputs and try again!")
+        return
+    }
     // This key is public btw
     // https://www.reddit.com/r/reactjs/comments/13gifz6/comment/jk3h5vu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
     formData.append("access_key", "3aa2ea5f-b72f-47eb-a03f-ee104fce3575");
@@ -145,7 +150,7 @@ function Contact(){
                             Get in touch
                         </button>
                     </form>
-                    <span>{result}</span>
+                    <span className="">{result}</span>
                 </div>
             </div>
 

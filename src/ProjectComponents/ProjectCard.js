@@ -128,7 +128,7 @@ function ProjectCard(){
         <div className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} dark:bg-gray-800 shadow rounded-lg p-4 flex items-start justify-between gap-2 px-2`}>
           <div className="flex flex-col">
           
-          <a href="https://definitely-not-netflix.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>Definitely Not Netflix</a>
+          <a href="https://2024movies.netlify.app/" target="_blank" rel="noreferrer" className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-[#34568B]'} dark:text-white transition duration-100 hover:text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:hover:text-gray-400 lg:text-xl`}>Definitely Not Netflix</a>
             <span className={`text-${theme === 'dark' ? 'gray-400' : 'gray-500'} dark:text-white text-sm`}>A Work in Progress. <br/><br/> As part of a team of two, I have been solely responsible for the front-end development of a full stack application organized by GrammerHub. The project involves hosting content on AWS (videos) and creating a simple mapped searchable site.
              <br/> <br/> *** Clicking the title will take you to an external site DefinitelyNotNetflix - Hosted on Netlify.</span>
              <br/><br/> 
