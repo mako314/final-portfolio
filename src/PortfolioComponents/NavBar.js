@@ -78,7 +78,7 @@ function Navbar(){
 
                   {/* https://docs.google.com/document/d/e/2PACX-1vTg3XLzEu8JYKwUNm7p3IhsWToOPtHLG_XRbcB5RF90_7wKw3wW2Tla8vWK0H1GfQ/pub */}
                     
-                  <a href='https://docs.google.com/document/d/e/2PACX-1vTg3XLzEu8JYKwUNm7p3IhsWToOPtHLG_XRbcB5RF90_7wKw3wW2Tla8vWK0H1GfQ/pub'
+                  <a href='https://docs.google.com/document/d/e/2PACX-1vSWiHpgF071cT-0ypLgMqQ-GgE3haQdIXMLm0sGS4GUcMh0KMoBJ9sjsFa6YrMgYvwHNLOHGlW_AVKt/pub'
                       target="_blank" 
                       rel="noreferrer"
                       role="menuitem"
